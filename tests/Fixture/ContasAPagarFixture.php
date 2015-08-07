@@ -11,13 +11,6 @@ class ContasAPagarFixture extends TestFixture
 {
 
     /**
-     * Table name
-     *
-     * @var string
-     */
-    public $table = 'contas_a_pagar';
-
-    /**
      * Fields
      *
      * @var array
@@ -53,8 +46,8 @@ class ContasAPagarFixture extends TestFixture
             'valor_documento' => 'Lorem ipsum dolor sit amet',
             'valor_liquido' => 'Lorem ipsum dolor sit amet',
             'parcelas' => '',
-            'created' => 1438947897,
-            'modified' => 1438947897
+            'created' => 1438950778,
+            'modified' => 1438950778
         ],
     ];
 }

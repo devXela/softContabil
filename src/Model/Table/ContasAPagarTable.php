@@ -11,7 +11,7 @@ use Cake\Validation\Validator;
  * ContasAPagar Model
  *
  * @property \Cake\ORM\Association\BelongsTo $FormaPagamentos
- * @property \Cake\ORM\Association\BelongsTo $Fornecedors
+ * @property \Cake\ORM\Association\BelongsTo $Fornecedores
  * @property \Cake\ORM\Association\BelongsToMany $Retencoes
  */
 class ContasAPagarTable extends Table
@@ -35,13 +35,13 @@ class ContasAPagarTable extends Table
             'foreignKey' => 'forma_pagamento_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsTo('Fornecedors', [
+        $this->belongsTo('Fornecedores', [
             'foreignKey' => 'fornecedor_id',
             'joinType' => 'INNER'
         ]);
         $this->belongsToMany('Retencoes', [
             'foreignKey' => 'contas_a_pagar_id',
-            'targetForeignKey' => 'retenco_id',
+            'targetForeignKey' => 'retencao_id',
             'joinTable' => 'contas_a_pagar_retencoes'
         ]);
     }
@@ -89,7 +89,7 @@ class ContasAPagarTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['forma_pagamento_id'], 'FormaPagamentos'));
-        $rules->add($rules->existsIn(['fornecedor_id'], 'Fornecedors'));
+        $rules->add($rules->existsIn(['fornecedor_id'], 'Fornecedores'));
         return $rules;
     }
 }

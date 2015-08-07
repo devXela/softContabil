@@ -5,6 +5,10 @@
         <li><?= $this->Form->postLink(__('Delete Contas A Pagar Retencao'), ['action' => 'delete', $contasAPagarRetencao->id], ['confirm' => __('Are you sure you want to delete # {0}?', $contasAPagarRetencao->id)]) ?> </li>
         <li><?= $this->Html->link(__('List Contas A Pagar Retencoes'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Contas A Pagar Retencao'), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Retencoes'), ['controller' => 'Retencoes', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Retencao'), ['controller' => 'Retencoes', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Contas A Pagar'), ['controller' => 'ContasAPagar', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Contas A Pagar'), ['controller' => 'ContasAPagar', 'action' => 'add']) ?> </li>
     </ul>
 </div>
 <div class="contasAPagarRetencoes view large-10 medium-9 columns">
@@ -13,14 +17,14 @@
         <div class="large-5 columns strings">
             <h6 class="subheader"><?= __('Valor Retencao') ?></h6>
             <p><?= h($contasAPagarRetencao->valor_retencao) ?></p>
+            <h6 class="subheader"><?= __('Retencao') ?></h6>
+            <p><?= $contasAPagarRetencao->has('retencao') ? $this->Html->link($contasAPagarRetencao->retencao->id, ['controller' => 'Retencoes', 'action' => 'view', $contasAPagarRetencao->retencao->id]) : '' ?></p>
+            <h6 class="subheader"><?= __('Contas A Pagar') ?></h6>
+            <p><?= $contasAPagarRetencao->has('contas_a_pagar') ? $this->Html->link($contasAPagarRetencao->contas_a_pagar->id, ['controller' => 'ContasAPagar', 'action' => 'view', $contasAPagarRetencao->contas_a_pagar->id]) : '' ?></p>
         </div>
         <div class="large-2 columns numbers end">
             <h6 class="subheader"><?= __('Id') ?></h6>
             <p><?= $this->Number->format($contasAPagarRetencao->id) ?></p>
-            <h6 class="subheader"><?= __('Retencao Id') ?></h6>
-            <p><?= $this->Number->format($contasAPagarRetencao->retencao_id) ?></p>
-            <h6 class="subheader"><?= __('Contas A Pagar Id') ?></h6>
-            <p><?= $this->Number->format($contasAPagarRetencao->contas_a_pagar_id) ?></p>
         </div>
     </div>
 </div>

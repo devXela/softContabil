@@ -19,7 +19,7 @@ class ContasAPagarRateiosController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['ContasAPagars', 'Setores']
+            'contain' => ['ContasAPagar', 'Setores']
         ];
         $this->set('contasAPagarRateios', $this->paginate($this->ContasAPagarRateios));
         $this->set('_serialize', ['contasAPagarRateios']);
@@ -35,7 +35,7 @@ class ContasAPagarRateiosController extends AppController
     public function view($id = null)
     {
         $contasAPagarRateio = $this->ContasAPagarRateios->get($id, [
-            'contain' => ['ContasAPagars', 'Setores']
+            'contain' => ['ContasAPagar', 'Setores']
         ]);
         $this->set('contasAPagarRateio', $contasAPagarRateio);
         $this->set('_serialize', ['contasAPagarRateio']);
@@ -58,9 +58,9 @@ class ContasAPagarRateiosController extends AppController
                 $this->Flash->error(__('The contas a pagar rateio could not be saved. Please, try again.'));
             }
         }
-        $contasAPagars = $this->ContasAPagarRateios->ContasAPagars->find('list', ['limit' => 200]);
+        $contasAPagar = $this->ContasAPagarRateios->ContasAPagar->find('list', ['limit' => 200]);
         $setores = $this->ContasAPagarRateios->Setores->find('list', ['limit' => 200]);
-        $this->set(compact('contasAPagarRateio', 'contasAPagars', 'setores'));
+        $this->set(compact('contasAPagarRateio', 'contasAPagar', 'setores'));
         $this->set('_serialize', ['contasAPagarRateio']);
     }
 
@@ -85,9 +85,9 @@ class ContasAPagarRateiosController extends AppController
                 $this->Flash->error(__('The contas a pagar rateio could not be saved. Please, try again.'));
             }
         }
-        $contasAPagars = $this->ContasAPagarRateios->ContasAPagars->find('list', ['limit' => 200]);
+        $contasAPagar = $this->ContasAPagarRateios->ContasAPagar->find('list', ['limit' => 200]);
         $setores = $this->ContasAPagarRateios->Setores->find('list', ['limit' => 200]);
-        $this->set(compact('contasAPagarRateio', 'contasAPagars', 'setores'));
+        $this->set(compact('contasAPagarRateio', 'contasAPagar', 'setores'));
         $this->set('_serialize', ['contasAPagarRateio']);
     }
 

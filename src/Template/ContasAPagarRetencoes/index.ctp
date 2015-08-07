@@ -2,6 +2,10 @@
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
         <li><?= $this->Html->link(__('New Contas A Pagar Retencao'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Retencoes'), ['controller' => 'Retencoes', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Retencao'), ['controller' => 'Retencoes', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Contas A Pagar'), ['controller' => 'ContasAPagar', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Contas A Pagar'), ['controller' => 'ContasAPagar', 'action' => 'add']) ?></li>
     </ul>
 </div>
 <div class="contasAPagarRetencoes index large-10 medium-9 columns">
@@ -20,8 +24,12 @@
         <tr>
             <td><?= $this->Number->format($contasAPagarRetencao->id) ?></td>
             <td><?= h($contasAPagarRetencao->valor_retencao) ?></td>
-            <td><?= $this->Number->format($contasAPagarRetencao->retencao_id) ?></td>
-            <td><?= $this->Number->format($contasAPagarRetencao->contas_a_pagar_id) ?></td>
+            <td>
+                <?= $contasAPagarRetencao->has('retencao') ? $this->Html->link($contasAPagarRetencao->retencao->id, ['controller' => 'Retencoes', 'action' => 'view', $contasAPagarRetencao->retencao->id]) : '' ?>
+            </td>
+            <td>
+                <?= $contasAPagarRetencao->has('contas_a_pagar') ? $this->Html->link($contasAPagarRetencao->contas_a_pagar->id, ['controller' => 'ContasAPagar', 'action' => 'view', $contasAPagarRetencao->contas_a_pagar->id]) : '' ?>
+            </td>
             <td class="actions">
                 <?= $this->Html->link(__('View'), ['action' => 'view', $contasAPagarRetencao->id]) ?>
                 <?= $this->Html->link(__('Edit'), ['action' => 'edit', $contasAPagarRetencao->id]) ?>

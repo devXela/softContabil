@@ -2,6 +2,8 @@
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
         <li><?= $this->Html->link(__('List Contas A Pagar Rateios'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Contas A Pagar'), ['controller' => 'ContasAPagar', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Contas A Pagar'), ['controller' => 'ContasAPagar', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Setores'), ['controller' => 'Setores', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Setore'), ['controller' => 'Setores', 'action' => 'add']) ?></li>
     </ul>
@@ -11,7 +13,7 @@
     <fieldset>
         <legend><?= __('Add Contas A Pagar Rateio') ?></legend>
         <?php
-            echo $this->Form->input('contas_a_pagar_id');
+            echo $this->Form->input('contas_a_pagar_id', ['options' => $contasAPagar]);
             echo $this->Form->input('setores_id', ['options' => $setores]);
         ?>
     </fieldset>

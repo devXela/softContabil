@@ -11,7 +11,7 @@
         <li><?= $this->Html->link(__('List Forma Pagamentos'), ['controller' => 'FormaPagamentos', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Forma Pagamento'), ['controller' => 'FormaPagamentos', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Retencoes'), ['controller' => 'Retencoes', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Retenco'), ['controller' => 'Retencoes', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New Retencao'), ['controller' => 'Retencoes', 'action' => 'add']) ?></li>
     </ul>
 </div>
 <div class="contasAPagar form large-10 medium-9 columns">

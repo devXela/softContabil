@@ -2,6 +2,8 @@
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
         <li><?= $this->Html->link(__('New Contas A Pagar Rateio'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Contas A Pagar'), ['controller' => 'ContasAPagar', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Contas A Pagar'), ['controller' => 'ContasAPagar', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Setores'), ['controller' => 'Setores', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Setore'), ['controller' => 'Setores', 'action' => 'add']) ?></li>
     </ul>
@@ -20,7 +22,9 @@
     <?php foreach ($contasAPagarRateios as $contasAPagarRateio): ?>
         <tr>
             <td><?= $this->Number->format($contasAPagarRateio->id) ?></td>
-            <td><?= $this->Number->format($contasAPagarRateio->contas_a_pagar_id) ?></td>
+            <td>
+                <?= $contasAPagarRateio->has('contas_a_pagar') ? $this->Html->link($contasAPagarRateio->contas_a_pagar->id, ['controller' => 'ContasAPagar', 'action' => 'view', $contasAPagarRateio->contas_a_pagar->id]) : '' ?>
+            </td>
             <td>
                 <?= $contasAPagarRateio->has('setore') ? $this->Html->link($contasAPagarRateio->setore->id, ['controller' => 'Setores', 'action' => 'view', $contasAPagarRateio->setore->id]) : '' ?>
             </td>

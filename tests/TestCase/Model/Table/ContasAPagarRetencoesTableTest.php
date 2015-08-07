@@ -18,8 +18,13 @@ class ContasAPagarRetencoesTableTest extends TestCase
      */
     public $fixtures = [
         'app.contas_a_pagar_retencoes',
-        'app.retencaos',
-        'app.contas_a_pagars'
+        'app.retencoes',
+        'app.contas_a_pagar',
+        'app.forma_pagamentos',
+        'app.fornecedores',
+        'app.empresas',
+        'app.classe_fornecedores',
+        'app.categoria_fornecedores'
     ];
 
     /**

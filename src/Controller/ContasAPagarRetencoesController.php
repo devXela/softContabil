@@ -19,7 +19,7 @@ class ContasAPagarRetencoesController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Retencaos', 'ContasAPagars']
+            'contain' => ['Retencoes', 'ContasAPagar']
         ];
         $this->set('contasAPagarRetencoes', $this->paginate($this->ContasAPagarRetencoes));
         $this->set('_serialize', ['contasAPagarRetencoes']);
@@ -35,7 +35,7 @@ class ContasAPagarRetencoesController extends AppController
     public function view($id = null)
     {
         $contasAPagarRetencao = $this->ContasAPagarRetencoes->get($id, [
-            'contain' => ['Retencaos', 'ContasAPagars']
+            'contain' => ['Retencoes', 'ContasAPagar']
         ]);
         $this->set('contasAPagarRetencao', $contasAPagarRetencao);
         $this->set('_serialize', ['contasAPagarRetencao']);
@@ -58,9 +58,9 @@ class ContasAPagarRetencoesController extends AppController
                 $this->Flash->error(__('The contas a pagar retencao could not be saved. Please, try again.'));
             }
         }
-        $retencaos = $this->ContasAPagarRetencoes->Retencaos->find('list', ['limit' => 200]);
-        $contasAPagars = $this->ContasAPagarRetencoes->ContasAPagars->find('list', ['limit' => 200]);
-        $this->set(compact('contasAPagarRetencao', 'retencaos', 'contasAPagars'));
+        $retencoes = $this->ContasAPagarRetencoes->Retencoes->find('list', ['limit' => 200]);
+        $contasAPagar = $this->ContasAPagarRetencoes->ContasAPagar->find('list', ['limit' => 200]);
+        $this->set(compact('contasAPagarRetencao', 'retencoes', 'contasAPagar'));
         $this->set('_serialize', ['contasAPagarRetencao']);
     }
 
@@ -85,9 +85,9 @@ class ContasAPagarRetencoesController extends AppController
                 $this->Flash->error(__('The contas a pagar retencao could not be saved. Please, try again.'));
             }
         }
-        $retencaos = $this->ContasAPagarRetencoes->Retencaos->find('list', ['limit' => 200]);
-        $contasAPagars = $this->ContasAPagarRetencoes->ContasAPagars->find('list', ['limit' => 200]);
-        $this->set(compact('contasAPagarRetencao', 'retencaos', 'contasAPagars'));
+        $retencoes = $this->ContasAPagarRetencoes->Retencoes->find('list', ['limit' => 200]);
+        $contasAPagar = $this->ContasAPagarRetencoes->ContasAPagar->find('list', ['limit' => 200]);
+        $this->set(compact('contasAPagarRetencao', 'retencoes', 'contasAPagar'));
         $this->set('_serialize', ['contasAPagarRetencao']);
     }
 
