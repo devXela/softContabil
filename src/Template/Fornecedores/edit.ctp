@@ -3,8 +3,8 @@
     <ul class="side-nav">
         <li><?= $this->Form->postLink(
                 __('Delete'),
-                ['action' => 'delete', $fornecedorr->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $fornecedorr->id)]
+                ['action' => 'delete', $fornecedor->id],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $fornecedor->id)]
             )
         ?></li>
         <li><?= $this->Html->link(__('List Fornecedores'), ['action' => 'index']) ?></li>
@@ -17,9 +17,9 @@
     </ul>
 </div>
 <div class="fornecedores form large-10 medium-9 columns">
-    <?= $this->Form->create($fornecedorr) ?>
+    <?= $this->Form->create($fornecedor) ?>
     <fieldset>
-        <legend><?= __('Edit Fornecedorr') ?></legend>
+        <legend><?= __('Edit Fornecedor') ?></legend>
         <?php
             echo $this->Form->input('empresa_id', ['options' => $empresas]);
             echo $this->Form->input('classe_fornecedor_id', ['options' => $classeFornecedores]);

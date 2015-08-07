@@ -1,7 +1,7 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Fornecedorr;
+use App\Model\Entity\Fornecedor;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
@@ -13,6 +13,7 @@ use Cake\Validation\Validator;
  * @property \Cake\ORM\Association\BelongsTo $Empresas
  * @property \Cake\ORM\Association\BelongsTo $ClasseFornecedores
  * @property \Cake\ORM\Association\BelongsTo $CategoriaFornecedores
+ * @property \Cake\ORM\Association\HasMany $ContasAPagar
  */
 class FornecedoresTable extends Table
 {
@@ -41,6 +42,9 @@ class FornecedoresTable extends Table
         $this->belongsTo('CategoriaFornecedores', [
             'foreignKey' => 'categoria_fornecedor_id',
             'joinType' => 'INNER'
+        ]);
+        $this->hasMany('ContasAPagar', [
+            'foreignKey' => 'fornecedor_id'
         ]);
     }
 

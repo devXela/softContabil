@@ -28,17 +28,17 @@ class FornecedoresController extends AppController
     /**
      * View method
      *
-     * @param string|null $id Fornecedorr id.
+     * @param string|null $id Fornecedor id.
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function view($id = null)
     {
-        $fornecedorr = $this->Fornecedores->get($id, [
+        $fornecedor = $this->Fornecedores->get($id, [
             'contain' => ['Empresas', 'ClasseFornecedores', 'CategoriaFornecedores']
         ]);
-        $this->set('fornecedorr', $fornecedorr);
-        $this->set('_serialize', ['fornecedorr']);
+        $this->set('fornecedor', $fornecedor);
+        $this->set('_serialize', ['fornecedor']);
     }
 
     /**
@@ -48,66 +48,66 @@ class FornecedoresController extends AppController
      */
     public function add()
     {
-        $fornecedorr = $this->Fornecedores->newEntity();
+        $fornecedor = $this->Fornecedores->newEntity();
         if ($this->request->is('post')) {
-            $fornecedorr = $this->Fornecedores->patchEntity($fornecedorr, $this->request->data);
-            if ($this->Fornecedores->save($fornecedorr)) {
-                $this->Flash->success(__('The fornecedorr has been saved.'));
+            $fornecedor = $this->Fornecedores->patchEntity($fornecedor, $this->request->data);
+            if ($this->Fornecedores->save($fornecedor)) {
+                $this->Flash->success(__('The fornecedor has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The fornecedorr could not be saved. Please, try again.'));
+                $this->Flash->error(__('The fornecedor could not be saved. Please, try again.'));
             }
         }
         $empresas = $this->Fornecedores->Empresas->find('list', ['limit' => 200]);
         $classeFornecedores = $this->Fornecedores->ClasseFornecedores->find('list', ['limit' => 200]);
         $categoriaFornecedores = $this->Fornecedores->CategoriaFornecedores->find('list', ['limit' => 200]);
-        $this->set(compact('fornecedorr', 'empresas', 'classeFornecedores', 'categoriaFornecedores'));
-        $this->set('_serialize', ['fornecedorr']);
+        $this->set(compact('fornecedor', 'empresas', 'classeFornecedores', 'categoriaFornecedores'));
+        $this->set('_serialize', ['fornecedor']);
     }
 
     /**
      * Edit method
      *
-     * @param string|null $id Fornecedorr id.
+     * @param string|null $id Fornecedor id.
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
     {
-        $fornecedorr = $this->Fornecedores->get($id, [
+        $fornecedor = $this->Fornecedores->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $fornecedorr = $this->Fornecedores->patchEntity($fornecedorr, $this->request->data);
-            if ($this->Fornecedores->save($fornecedorr)) {
-                $this->Flash->success(__('The fornecedorr has been saved.'));
+            $fornecedor = $this->Fornecedores->patchEntity($fornecedor, $this->request->data);
+            if ($this->Fornecedores->save($fornecedor)) {
+                $this->Flash->success(__('The fornecedor has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The fornecedorr could not be saved. Please, try again.'));
+                $this->Flash->error(__('The fornecedor could not be saved. Please, try again.'));
             }
         }
         $empresas = $this->Fornecedores->Empresas->find('list', ['limit' => 200]);
         $classeFornecedores = $this->Fornecedores->ClasseFornecedores->find('list', ['limit' => 200]);
         $categoriaFornecedores = $this->Fornecedores->CategoriaFornecedores->find('list', ['limit' => 200]);
-        $this->set(compact('fornecedorr', 'empresas', 'classeFornecedores', 'categoriaFornecedores'));
-        $this->set('_serialize', ['fornecedorr']);
+        $this->set(compact('fornecedor', 'empresas', 'classeFornecedores', 'categoriaFornecedores'));
+        $this->set('_serialize', ['fornecedor']);
     }
 
     /**
      * Delete method
      *
-     * @param string|null $id Fornecedorr id.
+     * @param string|null $id Fornecedor id.
      * @return void Redirects to index.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $fornecedorr = $this->Fornecedores->get($id);
-        if ($this->Fornecedores->delete($fornecedorr)) {
-            $this->Flash->success(__('The fornecedorr has been deleted.'));
+        $fornecedor = $this->Fornecedores->get($id);
+        if ($this->Fornecedores->delete($fornecedor)) {
+            $this->Flash->success(__('The fornecedor has been deleted.'));
         } else {
-            $this->Flash->error(__('The fornecedorr could not be deleted. Please, try again.'));
+            $this->Flash->error(__('The fornecedor could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
     }

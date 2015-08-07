@@ -1,7 +1,7 @@
 <div class="actions columns large-2 medium-3">
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Fornecedorr'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New Fornecedor'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Empresas'), ['controller' => 'Empresas', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Empresa'), ['controller' => 'Empresas', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Classe Fornecedores'), ['controller' => 'ClasseFornecedores', 'action' => 'index']) ?></li>
@@ -25,25 +25,25 @@
         </tr>
     </thead>
     <tbody>
-    <?php foreach ($fornecedores as $fornecedorr): ?>
+    <?php foreach ($fornecedores as $fornecedor): ?>
         <tr>
-            <td><?= $this->Number->format($fornecedorr->id) ?></td>
+            <td><?= $this->Number->format($fornecedor->id) ?></td>
             <td>
-                <?= $fornecedorr->has('empresa') ? $this->Html->link($fornecedorr->empresa->id, ['controller' => 'Empresas', 'action' => 'view', $fornecedorr->empresa->id]) : '' ?>
+                <?= $fornecedor->has('empresa') ? $this->Html->link($fornecedor->empresa->id, ['controller' => 'Empresas', 'action' => 'view', $fornecedor->empresa->id]) : '' ?>
             </td>
             <td>
-                <?= $fornecedorr->has('c') ? $this->Html->link($fornecedorr->c->id, ['controller' => 'ClasseFornecedores', 'action' => 'view', $fornecedorr->c->id]) : '' ?>
+                <?= $fornecedor->has('c') ? $this->Html->link($fornecedor->c->id, ['controller' => 'ClasseFornecedores', 'action' => 'view', $fornecedor->c->id]) : '' ?>
             </td>
             <td>
-                <?= $fornecedorr->has('c') ? $this->Html->link($fornecedorr->c->id, ['controller' => 'CategoriaFornecedores', 'action' => 'view', $fornecedorr->c->id]) : '' ?>
+                <?= $fornecedor->has('c') ? $this->Html->link($fornecedor->c->id, ['controller' => 'CategoriaFornecedores', 'action' => 'view', $fornecedor->c->id]) : '' ?>
             </td>
-            <td><?= $this->Number->format($fornecedorr->indentificacao) ?></td>
-            <td><?= h($fornecedorr->email) ?></td>
-            <td><?= h($fornecedorr->nome) ?></td>
+            <td><?= $this->Number->format($fornecedor->indentificacao) ?></td>
+            <td><?= h($fornecedor->email) ?></td>
+            <td><?= h($fornecedor->nome) ?></td>
             <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $fornecedorr->id]) ?>
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $fornecedorr->id]) ?>
-                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $fornecedorr->id], ['confirm' => __('Are you sure you want to delete # {0}?', $fornecedorr->id)]) ?>
+                <?= $this->Html->link(__('View'), ['action' => 'view', $fornecedor->id]) ?>
+                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $fornecedor->id]) ?>
+                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $fornecedor->id], ['confirm' => __('Are you sure you want to delete # {0}?', $fornecedor->id)]) ?>
             </td>
         </tr>
 

@@ -11,9 +11,9 @@
     </ul>
 </div>
 <div class="fornecedores form large-10 medium-9 columns">
-    <?= $this->Form->create($fornecedorr) ?>
+    <?= $this->Form->create($fornecedor) ?>
     <fieldset>
-        <legend><?= __('Add Fornecedorr') ?></legend>
+        <legend><?= __('Add Fornecedor') ?></legend>
         <?php
             echo $this->Form->input('empresa_id', ['options' => $empresas]);
             echo $this->Form->input('classe_fornecedor_id', ['options' => $classeFornecedores]);
