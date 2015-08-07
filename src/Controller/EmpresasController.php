@@ -61,7 +61,7 @@ class EmpresasController extends AppController
         $atividadeEmpresas = $this->Empresas->AtividadeEmpresas->find('list', ['limit' => 200]);
 
         $EmpresasTipos = $this->Empresas->EmpresasTipos->find('list', ['limit' => 200]);
-        debug($EmpresasTipos);
+        // debug($EmpresasTipos);
         $EmpresasFormaTributacoes = $this->Empresas->EmpresasFormaTributacoes->find('list', ['limit' => 200]);
         $formaTrabalhos = $this->Empresas->FormaTrabalhos->find('list', ['limit' => 200]);
         $this->set(compact('empresa', 'atividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes', 'formaTrabalhos'));
