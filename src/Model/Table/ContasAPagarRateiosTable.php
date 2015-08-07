@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
 /**
  * ContasAPagarRateios Model
  *
- * @property \Cake\ORM\Association\BelongsTo $ContasAPagars
+ * @property \Cake\ORM\Association\BelongsTo $ContasAPagar
  * @property \Cake\ORM\Association\BelongsTo $Setores
  */
 class ContasAPagarRateiosTable extends Table
@@ -29,7 +29,7 @@ class ContasAPagarRateiosTable extends Table
         $this->table('contas_a_pagar_rateios');
         $this->displayField('id');
         $this->primaryKey('id');
-        $this->belongsTo('ContasAPagars', [
+        $this->belongsTo('ContasAPagar', [
             'foreignKey' => 'contas_a_pagar_id',
             'joinType' => 'INNER'
         ]);
@@ -63,7 +63,7 @@ class ContasAPagarRateiosTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['contas_a_pagar_id'], 'ContasAPagars'));
+        $rules->add($rules->existsIn(['contas_a_pagar_id'], 'ContasAPagar'));
         $rules->add($rules->existsIn(['setores_id'], 'Setores'));
         return $rules;
     }
