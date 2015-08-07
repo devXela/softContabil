@@ -20,8 +20,8 @@
         <legend><?= __('Add Empresa') ?></legend>
         <?php
             echo $this->Form->input('atividade_empresa_id', ['options' => $atividadeEmpresas]);
-            echo $this->Form->input('empresas_tipos_id');
-            echo $this->Form->input('empresas_forma_tributacao_id');
+            echo $this->Form->input('empresas_tipos_id', ['options' => $EmpresasTipos]);
+            echo $this->Form->input('empresas_forma_tributacao_id', ['options' => $EmpresasFormaTributacoes]);
             echo $this->Form->input('cnpj');
             echo $this->Form->input('email');
             echo $this->Form->input('nome_empresa');
