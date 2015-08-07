@@ -40,7 +40,7 @@ class EmpresasTable extends Table
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('EmpresasTipos', [
-            'foreignKey' => 'empresa_tipos_id',
+            'foreignKey' => 'empresas_tipos_id',
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('EmpresasFormaTributacoes', [
