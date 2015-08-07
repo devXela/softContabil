@@ -184,6 +184,7 @@ Inflector::rules('irregular', [
 Inflector::rules('plural', [
     '/(fornecedor)$/i' => '\1es',
     '/(retenc)ao$/i' => '\1oes',
+    '/(setor)$/i' => '\1es',
 ]);
 Inflector::rules('singular', [
     '/(fornecedor)es$/i' => '\1',
