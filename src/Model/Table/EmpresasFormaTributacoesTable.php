@@ -25,7 +25,7 @@ class EmpresasFormaTributacoesTable extends Table
         parent::initialize($config);
 
         $this->table('empresas_forma_tributacoes');
-        $this->displayField('id');
+        $this->displayField('descricao');
         $this->primaryKey('id');
     }
 
