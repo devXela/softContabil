@@ -171,7 +171,10 @@ Request::addDetector('tablet', function ($request) {
  */
 
 // nao sofre mudanças
-Inflector::rules('uninflected', ['contas_a_pagar']);
+Inflector::rules('uninflected', [
+    'contas_a_pagar',
+    'contas_a_receber',
+]);
 // irregulares
 Inflector::rules('irregular', [
     'classeFornecedor' => 'classeFornecedores',
