@@ -20,7 +20,11 @@ class FornecedoresTableTest extends TestCase
         'app.fornecedores',
         'app.empresas',
         'app.classe_fornecedores',
-        'app.categoria_fornecedores'
+        'app.categoria_fornecedores',
+        'app.contas_a_pagar',
+        'app.forma_pagamentos',
+        'app.retencoes',
+        'app.contas_a_pagar_retencoes'
     ];
 
     /**

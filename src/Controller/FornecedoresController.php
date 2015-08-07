@@ -35,7 +35,7 @@ class FornecedoresController extends AppController
     public function view($id = null)
     {
         $fornecedor = $this->Fornecedores->get($id, [
-            'contain' => ['Empresas', 'ClasseFornecedores', 'CategoriaFornecedores']
+            'contain' => ['Empresas', 'ClasseFornecedores', 'CategoriaFornecedores', 'ContasAPagar']
         ]);
         $this->set('fornecedor', $fornecedor);
         $this->set('_serialize', ['fornecedor']);
