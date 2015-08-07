@@ -113,8 +113,8 @@ class EmpresasTable extends Table
     {
         $rules->add($rules->isUnique(['email']));
         $rules->add($rules->existsIn(['atividade_empresa_id'], 'AtividadeEmpresas'));
-        $rules->add($rules->existsIn(['tipo_empresa_id'], 'TipoEmpresas'));
-        $rules->add($rules->existsIn(['forma_tributacao_empresa_id'], 'FormaTributacaoEmpresas'));
+        $rules->add($rules->existsIn(['tipo_empresa_id'], 'EmpresasTipos'));
+        $rules->add($rules->existsIn(['forma_tributacao_empresa_id'], 'EmpresasFormaTributacoes'));
         return $rules;
     }
 }
