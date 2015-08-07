@@ -14,7 +14,7 @@ class RenameFkEmpresasTable extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('Empresas');
+        $table = $this->table('empresas');
         $table->renameColumn('tipo_empresa_id', 'empresas_tipos_id');
     }
 }
