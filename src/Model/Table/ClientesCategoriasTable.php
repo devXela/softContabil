@@ -25,7 +25,7 @@ class ClientesCategoriasTable extends Table
         parent::initialize($config);
 
         $this->table('clientes_categorias');
-        $this->displayField('id');
+        $this->displayField('descricao');
         $this->primaryKey('id');
     }
 

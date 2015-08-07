@@ -30,7 +30,7 @@ class ContaEmpresasTable extends Table
         parent::initialize($config);
 
         $this->table('conta_empresas');
-        $this->displayField('id');
+        $this->displayField('nome_conta');
         $this->primaryKey('id');
         $this->belongsTo('Empresas', [
             'foreignKey' => 'empresa_id',

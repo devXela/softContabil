@@ -25,7 +25,7 @@ class ContaEmpresasGerentesTable extends Table
         parent::initialize($config);
 
         $this->table('conta_empresas_gerentes');
-        $this->displayField('id');
+        $this->displayField('nome');
         $this->primaryKey('id');
     }
 

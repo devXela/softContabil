@@ -27,7 +27,7 @@ class BancosTable extends Table
         parent::initialize($config);
 
         $this->table('bancos');
-        $this->displayField('id');
+        $this->displayField('nome');
         $this->primaryKey('id');
         $this->hasMany('ContaEmpresas', [
             'foreignKey' => 'banco_id'

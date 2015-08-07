@@ -26,7 +26,7 @@ class ClasseFornecedoresTable extends Table
         parent::initialize($config);
 
         $this->table('classe_fornecedores');
-        $this->displayField('id');
+        $this->displayField('descricao');
         $this->primaryKey('id');
         $this->hasMany('Fornecedores', [
             'foreignKey' => 'classe_fornecedor_id'

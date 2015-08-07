@@ -26,7 +26,7 @@ class AtividadeEmpresasTable extends Table
         parent::initialize($config);
 
         $this->table('atividade_empresas');
-        $this->displayField('id');
+        $this->displayField('descricao');
         $this->primaryKey('id');
         $this->hasMany('Empresas', [
             'foreignKey' => 'atividade_empresa_id'

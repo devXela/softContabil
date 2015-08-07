@@ -28,7 +28,7 @@ class ClientesTable extends Table
         parent::initialize($config);
 
         $this->table('clientes');
-        $this->displayField('id');
+        $this->displayField('nome');
         $this->primaryKey('id');
         $this->belongsTo('Empresas', [
             'foreignKey' => 'empresa_id',
