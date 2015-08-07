@@ -170,6 +170,23 @@ Request::addDetector('tablet', function ($request) {
  * Inflector::rules('transliteration', ['/å/' => 'aa']);
  */
 
+// nao sofre mudanças
+Inflector::rules('uninflected', ['contas_a_pagar']);
+// irregulares
+Inflector::rules('irregular', [
+    'classeFornecedor' => 'classeFornecedores',
+    'categoriaFornecedor' => 'categoriaFornecedores',
+    'contasAPagarRetencoes' => 'contasAPagarRetencao',
+]);
+Inflector::rules('plural', [
+    '/(fornecedor)$/i' => '\1es',
+    '/(retenc)ao$/i' => '\1oes',
+]);
+Inflector::rules('singular', [
+    '/(fornecedor)es$/i' => '\1r',
+    '/(retenc)oes$/i' => '\1ao',
+]);
+
 /**
  * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call
  * Uncomment one of the lines below, as you need. make sure you read the documentation on Plugin to use more
