@@ -1,7 +1,7 @@
 <div class="actions columns large-2 medium-3">
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Categoria Fornecedore'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New C'), ['action' => 'add']) ?></li>
     </ul>
 </div>
 <div class="categoriaFornecedores index large-10 medium-9 columns">
@@ -14,14 +14,14 @@
         </tr>
     </thead>
     <tbody>
-    <?php foreach ($categoriaFornecedores as $categoriaFornecedore): ?>
+    <?php foreach ($categoriaFornecedores as $c): ?>
         <tr>
-            <td><?= $this->Number->format($categoriaFornecedore->id) ?></td>
-            <td><?= h($categoriaFornecedore->categoria) ?></td>
+            <td><?= $this->Number->format($c->id) ?></td>
+            <td><?= h($c->categoria) ?></td>
             <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $categoriaFornecedore->id]) ?>
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $categoriaFornecedore->id]) ?>
-                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $categoriaFornecedore->id], ['confirm' => __('Are you sure you want to delete # {0}?', $categoriaFornecedore->id)]) ?>
+                <?= $this->Html->link(__('View'), ['action' => 'view', $c->id]) ?>
+                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $c->id]) ?>
+                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $c->id], ['confirm' => __('Are you sure you want to delete # {0}?', $c->id)]) ?>
             </td>
         </tr>
 

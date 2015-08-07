@@ -5,9 +5,9 @@
     </ul>
 </div>
 <div class="categoriaFornecedores form large-10 medium-9 columns">
-    <?= $this->Form->create($categoriaFornecedore) ?>
+    <?= $this->Form->create($c) ?>
     <fieldset>
-        <legend><?= __('Add Categoria Fornecedore') ?></legend>
+        <legend><?= __('Add C') ?></legend>
         <?php
             echo $this->Form->input('categoria');
         ?>
