@@ -11,7 +11,7 @@ use Cake\Validation\Validator;
  * Empresas Model
  *
  * @property \Cake\ORM\Association\BelongsTo $AtividadeEmpresas
- * @property \Cake\ORM\Association\BelongsTo $TipoEmpresas
+ * @property \Cake\ORM\Association\BelongsTo $EmpresasTipos
  * @property \Cake\ORM\Association\BelongsTo $FormaTributacaoEmpresas
  * @property \Cake\ORM\Association\HasMany $Clientes
  * @property \Cake\ORM\Association\HasMany $Diretorias
