@@ -19,7 +19,7 @@ class EmpresasController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['AtividadeEmpresas', 'EmpresasTipos', 'FormaTributacaoEmpresas']
+            'contain' => ['AtividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes']
         ];
         $this->set('empresas', $this->paginate($this->Empresas));
         $this->set('_serialize', ['empresas']);
@@ -35,7 +35,7 @@ class EmpresasController extends AppController
     public function view($id = null)
     {
         $empresa = $this->Empresas->get($id, [
-            'contain' => ['AtividadeEmpresas', 'EmpresasTipos', 'FormaTributacaoEmpresas', 'FormaTrabalhos', 'Clientes', 'Diretorias', 'Fornecedores']
+            'contain' => ['AtividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes', 'FormaTrabalhos', 'Clientes', 'Diretorias', 'Fornecedores']
         ]);
         $this->set('empresa', $empresa);
         $this->set('_serialize', ['empresa']);
@@ -60,9 +60,9 @@ class EmpresasController extends AppController
         }
         $atividadeEmpresas = $this->Empresas->AtividadeEmpresas->find('list', ['limit' => 200]);
         $EmpresasTipos = $this->Empresas->EmpresasTipos->find('list', ['limit' => 200]);
-        $formaTributacaoEmpresas = $this->Empresas->FormaTributacaoEmpresas->find('list', ['limit' => 200]);
+        $EmpresasFormaTributacoes = $this->Empresas->EmpresasFormaTributacoes->find('list', ['limit' => 200]);
         $formaTrabalhos = $this->Empresas->FormaTrabalhos->find('list', ['limit' => 200]);
-        $this->set(compact('empresa', 'atividadeEmpresas', 'EmpresasTipos', 'formaTributacaoEmpresas', 'formaTrabalhos'));
+        $this->set(compact('empresa', 'atividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes', 'formaTrabalhos'));
         $this->set('_serialize', ['empresa']);
     }
 
@@ -89,9 +89,9 @@ class EmpresasController extends AppController
         }
         $atividadeEmpresas = $this->Empresas->AtividadeEmpresas->find('list', ['limit' => 200]);
         $EmpresasTipos = $this->Empresas->EmpresasTipos->find('list', ['limit' => 200]);
-        $formaTributacaoEmpresas = $this->Empresas->FormaTributacaoEmpresas->find('list', ['limit' => 200]);
+        $EmpresasFormaTributacoes = $this->Empresas->EmpresasFormaTributacoes->find('list', ['limit' => 200]);
         $formaTrabalhos = $this->Empresas->FormaTrabalhos->find('list', ['limit' => 200]);
-        $this->set(compact('empresa', 'atividadeEmpresas', 'EmpresasTipos', 'formaTributacaoEmpresas', 'formaTrabalhos'));
+        $this->set(compact('empresa', 'atividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes', 'formaTrabalhos'));
         $this->set('_serialize', ['empresa']);
     }
 

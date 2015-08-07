@@ -12,7 +12,7 @@ use Cake\Validation\Validator;
  *
  * @property \Cake\ORM\Association\BelongsTo $AtividadeEmpresas
  * @property \Cake\ORM\Association\BelongsTo $EmpresasTipos
- * @property \Cake\ORM\Association\BelongsTo $FormaTributacaoEmpresas
+ * @property \Cake\ORM\Association\BelongsTo $EmpresasFormaTributacoes
  * @property \Cake\ORM\Association\HasMany $Clientes
  * @property \Cake\ORM\Association\HasMany $Diretorias
  * @property \Cake\ORM\Association\HasMany $Fornecedores
