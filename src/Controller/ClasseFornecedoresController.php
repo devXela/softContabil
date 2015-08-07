@@ -25,17 +25,17 @@ class ClasseFornecedoresController extends AppController
     /**
      * View method
      *
-     * @param string|null $id Classe Fornecedore id.
+     * @param string|null $id C id.
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function view($id = null)
     {
-        $classeFornecedore = $this->ClasseFornecedores->get($id, [
+        $c = $this->ClasseFornecedores->get($id, [
             'contain' => []
         ]);
-        $this->set('classeFornecedore', $classeFornecedore);
-        $this->set('_serialize', ['classeFornecedore']);
+        $this->set('c', $c);
+        $this->set('_serialize', ['c']);
     }
 
     /**
@@ -45,60 +45,60 @@ class ClasseFornecedoresController extends AppController
      */
     public function add()
     {
-        $classeFornecedore = $this->ClasseFornecedores->newEntity();
+        $c = $this->ClasseFornecedores->newEntity();
         if ($this->request->is('post')) {
-            $classeFornecedore = $this->ClasseFornecedores->patchEntity($classeFornecedore, $this->request->data);
-            if ($this->ClasseFornecedores->save($classeFornecedore)) {
-                $this->Flash->success(__('The classe fornecedore has been saved.'));
+            $c = $this->ClasseFornecedores->patchEntity($c, $this->request->data);
+            if ($this->ClasseFornecedores->save($c)) {
+                $this->Flash->success(__('The c has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The classe fornecedore could not be saved. Please, try again.'));
+                $this->Flash->error(__('The c could not be saved. Please, try again.'));
             }
         }
-        $this->set(compact('classeFornecedore'));
-        $this->set('_serialize', ['classeFornecedore']);
+        $this->set(compact('c'));
+        $this->set('_serialize', ['c']);
     }
 
     /**
      * Edit method
      *
-     * @param string|null $id Classe Fornecedore id.
+     * @param string|null $id C id.
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
     {
-        $classeFornecedore = $this->ClasseFornecedores->get($id, [
+        $c = $this->ClasseFornecedores->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $classeFornecedore = $this->ClasseFornecedores->patchEntity($classeFornecedore, $this->request->data);
-            if ($this->ClasseFornecedores->save($classeFornecedore)) {
-                $this->Flash->success(__('The classe fornecedore has been saved.'));
+            $c = $this->ClasseFornecedores->patchEntity($c, $this->request->data);
+            if ($this->ClasseFornecedores->save($c)) {
+                $this->Flash->success(__('The c has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The classe fornecedore could not be saved. Please, try again.'));
+                $this->Flash->error(__('The c could not be saved. Please, try again.'));
             }
         }
-        $this->set(compact('classeFornecedore'));
-        $this->set('_serialize', ['classeFornecedore']);
+        $this->set(compact('c'));
+        $this->set('_serialize', ['c']);
     }
 
     /**
      * Delete method
      *
-     * @param string|null $id Classe Fornecedore id.
+     * @param string|null $id C id.
      * @return void Redirects to index.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $classeFornecedore = $this->ClasseFornecedores->get($id);
-        if ($this->ClasseFornecedores->delete($classeFornecedore)) {
-            $this->Flash->success(__('The classe fornecedore has been deleted.'));
+        $c = $this->ClasseFornecedores->get($id);
+        if ($this->ClasseFornecedores->delete($c)) {
+            $this->Flash->success(__('The c has been deleted.'));
         } else {
-            $this->Flash->error(__('The classe fornecedore could not be deleted. Please, try again.'));
+            $this->Flash->error(__('The c could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
     }

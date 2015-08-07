@@ -1,7 +1,7 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\ClasseFornecedore;
+use App\Model\Entity\C;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
 /**
  * ClasseFornecedores Model
  *
+ * @property \Cake\ORM\Association\HasMany $Fornecedores
  */
 class ClasseFornecedoresTable extends Table
 {
@@ -27,6 +28,9 @@ class ClasseFornecedoresTable extends Table
         $this->table('classe_fornecedores');
         $this->displayField('id');
         $this->primaryKey('id');
+        $this->hasMany('Fornecedores', [
+            'foreignKey' => 'classe_fornecedor_id'
+        ]);
     }
 
     /**

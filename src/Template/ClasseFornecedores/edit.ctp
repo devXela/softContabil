@@ -3,17 +3,17 @@
     <ul class="side-nav">
         <li><?= $this->Form->postLink(
                 __('Delete'),
-                ['action' => 'delete', $classeFornecedore->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $classeFornecedore->id)]
+                ['action' => 'delete', $c->id],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $c->id)]
             )
         ?></li>
         <li><?= $this->Html->link(__('List Classe Fornecedores'), ['action' => 'index']) ?></li>
     </ul>
 </div>
 <div class="classeFornecedores form large-10 medium-9 columns">
-    <?= $this->Form->create($classeFornecedore) ?>
+    <?= $this->Form->create($c) ?>
     <fieldset>
-        <legend><?= __('Edit Classe Fornecedore') ?></legend>
+        <legend><?= __('Edit C') ?></legend>
         <?php
             echo $this->Form->input('descricao');
         ?>
