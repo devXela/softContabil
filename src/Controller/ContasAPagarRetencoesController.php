@@ -28,17 +28,17 @@ class ContasAPagarRetencoesController extends AppController
     /**
      * View method
      *
-     * @param string|null $id Contas A Pagar Retenco id.
+     * @param string|null $id Contas A Pagar Retencao id.
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function view($id = null)
     {
-        $contasAPagarRetenco = $this->ContasAPagarRetencoes->get($id, [
+        $contasAPagarRetencao = $this->ContasAPagarRetencoes->get($id, [
             'contain' => ['Retencaos', 'ContasAPagars']
         ]);
-        $this->set('contasAPagarRetenco', $contasAPagarRetenco);
-        $this->set('_serialize', ['contasAPagarRetenco']);
+        $this->set('contasAPagarRetencao', $contasAPagarRetencao);
+        $this->set('_serialize', ['contasAPagarRetencao']);
     }
 
     /**
@@ -48,64 +48,64 @@ class ContasAPagarRetencoesController extends AppController
      */
     public function add()
     {
-        $contasAPagarRetenco = $this->ContasAPagarRetencoes->newEntity();
+        $contasAPagarRetencao = $this->ContasAPagarRetencoes->newEntity();
         if ($this->request->is('post')) {
-            $contasAPagarRetenco = $this->ContasAPagarRetencoes->patchEntity($contasAPagarRetenco, $this->request->data);
-            if ($this->ContasAPagarRetencoes->save($contasAPagarRetenco)) {
-                $this->Flash->success(__('The contas a pagar retenco has been saved.'));
+            $contasAPagarRetencao = $this->ContasAPagarRetencoes->patchEntity($contasAPagarRetencao, $this->request->data);
+            if ($this->ContasAPagarRetencoes->save($contasAPagarRetencao)) {
+                $this->Flash->success(__('The contas a pagar retencao has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The contas a pagar retenco could not be saved. Please, try again.'));
+                $this->Flash->error(__('The contas a pagar retencao could not be saved. Please, try again.'));
             }
         }
         $retencaos = $this->ContasAPagarRetencoes->Retencaos->find('list', ['limit' => 200]);
         $contasAPagars = $this->ContasAPagarRetencoes->ContasAPagars->find('list', ['limit' => 200]);
-        $this->set(compact('contasAPagarRetenco', 'retencaos', 'contasAPagars'));
-        $this->set('_serialize', ['contasAPagarRetenco']);
+        $this->set(compact('contasAPagarRetencao', 'retencaos', 'contasAPagars'));
+        $this->set('_serialize', ['contasAPagarRetencao']);
     }
 
     /**
      * Edit method
      *
-     * @param string|null $id Contas A Pagar Retenco id.
+     * @param string|null $id Contas A Pagar Retencao id.
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
     {
-        $contasAPagarRetenco = $this->ContasAPagarRetencoes->get($id, [
+        $contasAPagarRetencao = $this->ContasAPagarRetencoes->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $contasAPagarRetenco = $this->ContasAPagarRetencoes->patchEntity($contasAPagarRetenco, $this->request->data);
-            if ($this->ContasAPagarRetencoes->save($contasAPagarRetenco)) {
-                $this->Flash->success(__('The contas a pagar retenco has been saved.'));
+            $contasAPagarRetencao = $this->ContasAPagarRetencoes->patchEntity($contasAPagarRetencao, $this->request->data);
+            if ($this->ContasAPagarRetencoes->save($contasAPagarRetencao)) {
+                $this->Flash->success(__('The contas a pagar retencao has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The contas a pagar retenco could not be saved. Please, try again.'));
+                $this->Flash->error(__('The contas a pagar retencao could not be saved. Please, try again.'));
             }
         }
         $retencaos = $this->ContasAPagarRetencoes->Retencaos->find('list', ['limit' => 200]);
         $contasAPagars = $this->ContasAPagarRetencoes->ContasAPagars->find('list', ['limit' => 200]);
-        $this->set(compact('contasAPagarRetenco', 'retencaos', 'contasAPagars'));
-        $this->set('_serialize', ['contasAPagarRetenco']);
+        $this->set(compact('contasAPagarRetencao', 'retencaos', 'contasAPagars'));
+        $this->set('_serialize', ['contasAPagarRetencao']);
     }
 
     /**
      * Delete method
      *
-     * @param string|null $id Contas A Pagar Retenco id.
+     * @param string|null $id Contas A Pagar Retencao id.
      * @return void Redirects to index.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $contasAPagarRetenco = $this->ContasAPagarRetencoes->get($id);
-        if ($this->ContasAPagarRetencoes->delete($contasAPagarRetenco)) {
-            $this->Flash->success(__('The contas a pagar retenco has been deleted.'));
+        $contasAPagarRetencao = $this->ContasAPagarRetencoes->get($id);
+        if ($this->ContasAPagarRetencoes->delete($contasAPagarRetencao)) {
+            $this->Flash->success(__('The contas a pagar retencao has been deleted.'));
         } else {
-            $this->Flash->error(__('The contas a pagar retenco could not be deleted. Please, try again.'));
+            $this->Flash->error(__('The contas a pagar retencao could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
     }

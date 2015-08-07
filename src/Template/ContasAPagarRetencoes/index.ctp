@@ -1,7 +1,7 @@
 <div class="actions columns large-2 medium-3">
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Contas A Pagar Retenco'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New Contas A Pagar Retencao'), ['action' => 'add']) ?></li>
     </ul>
 </div>
 <div class="contasAPagarRetencoes index large-10 medium-9 columns">
@@ -16,16 +16,16 @@
         </tr>
     </thead>
     <tbody>
-    <?php foreach ($contasAPagarRetencoes as $contasAPagarRetenco): ?>
+    <?php foreach ($contasAPagarRetencoes as $contasAPagarRetencao): ?>
         <tr>
-            <td><?= $this->Number->format($contasAPagarRetenco->id) ?></td>
-            <td><?= h($contasAPagarRetenco->valor_retencao) ?></td>
-            <td><?= $this->Number->format($contasAPagarRetenco->retencao_id) ?></td>
-            <td><?= $this->Number->format($contasAPagarRetenco->contas_a_pagar_id) ?></td>
+            <td><?= $this->Number->format($contasAPagarRetencao->id) ?></td>
+            <td><?= h($contasAPagarRetencao->valor_retencao) ?></td>
+            <td><?= $this->Number->format($contasAPagarRetencao->retencao_id) ?></td>
+            <td><?= $this->Number->format($contasAPagarRetencao->contas_a_pagar_id) ?></td>
             <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $contasAPagarRetenco->id]) ?>
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $contasAPagarRetenco->id]) ?>
-                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $contasAPagarRetenco->id], ['confirm' => __('Are you sure you want to delete # {0}?', $contasAPagarRetenco->id)]) ?>
+                <?= $this->Html->link(__('View'), ['action' => 'view', $contasAPagarRetencao->id]) ?>
+                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $contasAPagarRetencao->id]) ?>
+                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $contasAPagarRetencao->id], ['confirm' => __('Are you sure you want to delete # {0}?', $contasAPagarRetencao->id)]) ?>
             </td>
         </tr>
 

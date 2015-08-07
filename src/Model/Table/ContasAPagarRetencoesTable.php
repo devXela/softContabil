@@ -1,7 +1,7 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\ContasAPagarRetenco;
+use App\Model\Entity\ContasAPagarRetencao;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
@@ -10,8 +10,8 @@ use Cake\Validation\Validator;
 /**
  * ContasAPagarRetencoes Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Retencaos
- * @property \Cake\ORM\Association\BelongsTo $ContasAPagars
+ * @property \Cake\ORM\Association\BelongsTo $Retencoes
+ * @property \Cake\ORM\Association\BelongsTo $ContasAPagar
  */
 class ContasAPagarRetencoesTable extends Table
 {
@@ -29,11 +29,11 @@ class ContasAPagarRetencoesTable extends Table
         $this->table('contas_a_pagar_retencoes');
         $this->displayField('id');
         $this->primaryKey('id');
-        $this->belongsTo('Retencaos', [
+        $this->belongsTo('Retencoes', [
             'foreignKey' => 'retencao_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsTo('ContasAPagars', [
+        $this->belongsTo('ContasAPagar', [
             'foreignKey' => 'contas_a_pagar_id',
             'joinType' => 'INNER'
         ]);
@@ -67,8 +67,8 @@ class ContasAPagarRetencoesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['retencao_id'], 'Retencaos'));
-        $rules->add($rules->existsIn(['contas_a_pagar_id'], 'ContasAPagars'));
+        $rules->add($rules->existsIn(['retencao_id'], 'Retencoes'));
+        $rules->add($rules->existsIn(['contas_a_pagar_id'], 'ContasAPagar'));
         return $rules;
     }
 }

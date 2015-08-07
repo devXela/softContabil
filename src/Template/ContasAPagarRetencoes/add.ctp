@@ -5,9 +5,9 @@
     </ul>
 </div>
 <div class="contasAPagarRetencoes form large-10 medium-9 columns">
-    <?= $this->Form->create($contasAPagarRetenco) ?>
+    <?= $this->Form->create($contasAPagarRetencao) ?>
     <fieldset>
-        <legend><?= __('Add Contas A Pagar Retenco') ?></legend>
+        <legend><?= __('Add Contas A Pagar Retencao') ?></legend>
         <?php
             echo $this->Form->input('valor_retencao');
             echo $this->Form->input('retencao_id');
