@@ -31,7 +31,16 @@ $cakeDescription = 'SoftContabil';
     <!-- <?= $this->Html->css('base.css') ?> -->
     <!-- <?= $this->Html->css('cake.css') ?> -->
     <!-- novos css -->
-    <?= $this->Html->css(['bootstrap.min','font-awesome.min', 'ionicons.min','jquery-jvectormap-1.2.2','AdminLTE.min','_all-skins.min']) ?>
+    <?= 
+        $this->Html->css([
+            'bootstrap.min',
+            'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
+            'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+            'jquery-jvectormap-1.2.2',
+            'AdminLTE.min',
+            '_all-skins.min'
+        ]) 
+    ?>
     <?= $this->Html->script(['jQuery-2.1.4.min','bootstrap.min','fastclick.min','app.min','jquery.sparkline.min','jquery-jvectormap-1.2.2.min','jquery-jvectormap-world-mill-en','jquery.slimscroll.min','Chart.min','dashboard2']) ?>
 </head>
     <div class="wrapper">
