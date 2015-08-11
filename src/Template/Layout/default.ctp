@@ -43,6 +43,7 @@ $cakeDescription = 'SoftContabil';
     ?>
     <?= $this->Html->script(['jQuery-2.1.4.min','bootstrap.min','fastclick.min','app.min','jquery.sparkline.min','jquery-jvectormap-1.2.2.min','jquery-jvectormap-world-mill-en','jquery.slimscroll.min','Chart.min','dashboard2','demo']) ?>
 </head>
+  <body class="skin-blue sidebar-mini">
     <div class="wrapper">
 
       <header class="main-header">
