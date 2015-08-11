@@ -32,7 +32,7 @@ $cakeDescription = 'SoftContabil';
     <!-- <?= $this->Html->css('cake.css') ?> -->
     <!-- novos css -->
     <?= $this->Html->css(['bootstrap.min','font-awesome.min', 'ionicons.min','jquery-jvectormap-1.2.2','AdminLTE.min','_all-skins.min']) ?>
-    <?= $this->Html->js(['jQuery-2.1.4.min','bootstrap.min','fastclick.min','app.min','jquery.sparkline.min','jquery-jvectormap-1.2.2.min','jquery-jvectormap-world-mill-en','jquery.slimscroll.min','Chart.min','dashboard2']) ?>
+    <?= $this->Html->script(['jQuery-2.1.4.min','bootstrap.min','fastclick.min','app.min','jquery.sparkline.min','jquery-jvectormap-1.2.2.min','jquery-jvectormap-world-mill-en','jquery.slimscroll.min','Chart.min','dashboard2']) ?>
 </head>
     <div class="wrapper">
 
