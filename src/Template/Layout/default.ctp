@@ -75,7 +75,7 @@ $cakeDescription = 'SoftContabil';
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                            <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                           </div>
                           <h4>
                             Support Team
@@ -87,7 +87,7 @@ $cakeDescription = 'SoftContabil';
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/img/user3-128x128.jpg" class="img-circle" alt="User Image" />
+                            <img src="img/user3-128x128.jpg" class="img-circle" alt="User Image" />
                           </div>
                           <h4>
                             AdminLTE Design Team
@@ -99,7 +99,7 @@ $cakeDescription = 'SoftContabil';
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/img/user4-128x128.jpg" class="img-circle" alt="User Image" />
+                            <img src="img/user4-128x128.jpg" class="img-circle" alt="User Image" />
                           </div>
                           <h4>
                             Developers
@@ -111,7 +111,7 @@ $cakeDescription = 'SoftContabil';
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/img/user3-128x128.jpg" class="img-circle" alt="User Image" />
+                            <img src="img/user3-128x128.jpg" class="img-circle" alt="User Image" />
                           </div>
                           <h4>
                             Sales Department
@@ -123,7 +123,7 @@ $cakeDescription = 'SoftContabil';
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/img/user4-128x128.jpg" class="img-circle" alt="User Image" />
+                            <img src="img/user4-128x128.jpg" class="img-circle" alt="User Image" />
                           </div>
                           <h4>
                             Reviewers
@@ -251,13 +251,13 @@ $cakeDescription = 'SoftContabil';
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="/img/user2-160x160.jpg" class="user-image" alt="User Image" />
+                  <img src="img/user2-160x160.jpg" class="user-image" alt="User Image" />
                   <span class="hidden-xs">Alexander Pierce</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                    <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
                       Alexander Pierce - Web Developer
                       <small>Member since Nov. 2012</small>
@@ -301,7 +301,7 @@ $cakeDescription = 'SoftContabil';
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p>Alexander Pierce</p>
@@ -562,7 +562,7 @@ $cakeDescription = 'SoftContabil';
                 <div class="box-body chat" id="chat-box">
                   <!-- chat item -->
                   <div class="item">
-                    <img src="/img/user4-128x128.jpg" alt="user image" class="online" />
+                    <img src="img/user4-128x128.jpg" alt="user image" class="online" />
                     <p class="message">
                       <a href="#" class="name">
                         <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
@@ -584,7 +584,7 @@ $cakeDescription = 'SoftContabil';
                   </div><!-- /.item -->
                   <!-- chat item -->
                   <div class="item">
-                    <img src="/img/user3-128x128.jpg" alt="user image" class="offline" />
+                    <img src="img/user3-128x128.jpg" alt="user image" class="offline" />
                     <p class="message">
                       <a href="#" class="name">
                         <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
@@ -597,7 +597,7 @@ $cakeDescription = 'SoftContabil';
                   </div><!-- /.item -->
                   <!-- chat item -->
                   <div class="item">
-                    <img src="/img/user2-160x160.jpg" alt="user image" class="offline" />
+                    <img src="img/user2-160x160.jpg" alt="user image" class="offline" />
                     <p class="message">
                       <a href="#" class="name">
                         <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
