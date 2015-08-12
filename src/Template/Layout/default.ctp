@@ -350,21 +350,22 @@ $cakeDescription = 'SoftContabil';
                 <i class="fa fa-building"></i> <span>Empresas</span> <small class="label pull-right bg-green">new</small>
               </a>
             </li>
- -->            <li class="treeview">
+ -->            
+            <li class="treeview">
               <a href="#">
                 <i class="fa fa-building"></i> 
                 <span>Empresas</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="pages/charts/chartjs.html"><i class="fa fa-list-alt"></i> Listar empresas</a></li>
-                <li><a href="pages/charts/morris.html"><i class="fa fa-upload"></i> Nova empresa</a></li>
+                <li><a href="empresas"><i class="fa fa-list-alt"></i> Listar empresas</a></li>
+                <li><a href="empresas/add"><i class="fa fa-upload"></i> Nova empresa</a></li>
               </ul>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-laptop"></i>
-                <span>UI Elements</span>
+                <i class="fa fa-houzz"></i>
+                <span>Atividades Empresas</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
