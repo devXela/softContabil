@@ -76,7 +76,8 @@ $cakeDescription = 'SoftContabil';
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                          <?php echo $this->Html->image("user2-160x160.jpg", ['fullBase' => false]); ?>
+                            <!-- <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image" /> -->
                           </div>
                           <h4>
                             Support Team
@@ -463,7 +464,7 @@ $cakeDescription = 'SoftContabil';
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Dashboard
+            <?= $this->fetch('title') ?>
             <small>Control panel</small>
           </h1>
           <ol class="breadcrumb">
@@ -477,6 +478,8 @@ $cakeDescription = 'SoftContabil';
 
           <!-- Main row -->
           <div class="row">
+            <?= $this->fetch("content"); ?>
+
             <!-- Left col -->
             <section class="col-lg-7 connectedSortable">
               <!-- Custom tabs (Charts with tabs)-->
