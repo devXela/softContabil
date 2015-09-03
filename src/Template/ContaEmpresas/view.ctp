@@ -18,15 +18,15 @@
     </ul>
 </div>
 <div class="contaEmpresas view large-10 medium-9 columns">
-    <h2><?= h($contaEmpresa->id) ?></h2>
+    <h2><?= h($contaEmpresa->nome_conta) ?></h2>
     <div class="row">
         <div class="large-5 columns strings">
             <h6 class="subheader"><?= __('Empresa') ?></h6>
             <p><?= $contaEmpresa->has('empresa') ? $this->Html->link($contaEmpresa->empresa->id, ['controller' => 'Empresas', 'action' => 'view', $contaEmpresa->empresa->id]) : '' ?></p>
             <h6 class="subheader"><?= __('Banco') ?></h6>
-            <p><?= $contaEmpresa->has('banco') ? $this->Html->link($contaEmpresa->banco->id, ['controller' => 'Bancos', 'action' => 'view', $contaEmpresa->banco->id]) : '' ?></p>
+            <p><?= $contaEmpresa->has('banco') ? $this->Html->link($contaEmpresa->banco->nome, ['controller' => 'Bancos', 'action' => 'view', $contaEmpresa->banco->id]) : '' ?></p>
             <h6 class="subheader"><?= __('Conta Empresas Gerente') ?></h6>
-            <p><?= $contaEmpresa->has('conta_empresas_gerente') ? $this->Html->link($contaEmpresa->conta_empresas_gerente->id, ['controller' => 'ContaEmpresasGerentes', 'action' => 'view', $contaEmpresa->conta_empresas_gerente->id]) : '' ?></p>
+            <p><?= $contaEmpresa->has('conta_empresas_gerente') ? $this->Html->link($contaEmpresa->conta_empresas_gerente->nome, ['controller' => 'ContaEmpresasGerentes', 'action' => 'view', $contaEmpresa->conta_empresas_gerente->id]) : '' ?></p>
             <h6 class="subheader"><?= __('Conta Empresas Tipo') ?></h6>
             <p><?= $contaEmpresa->has('conta_empresas_tipo') ? $this->Html->link($contaEmpresa->conta_empresas_tipo->id, ['controller' => 'ContaEmpresasTipos', 'action' => 'view', $contaEmpresa->conta_empresas_tipo->id]) : '' ?></p>
             <h6 class="subheader"><?= __('Nome Conta') ?></h6>

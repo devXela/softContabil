@@ -217,8 +217,8 @@ return [
              */
             'port' => 5432,
             'schema' => 'public',
-            'username' => 'root',
-            'password' => 'maluco@season1',
+            'username' => 'postgres',
+            'password' => '87maluco',
             'database' => 'roi',
             'encoding' => 'utf8',
             'timezone' => 'UTC',

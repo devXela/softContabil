@@ -2,3 +2,78 @@
 2015-08-07 11:40:12 Debug: command 'migrations' in plugin 'Migrations' was not aliased, conflicts with 'Migrations'
 2015-08-07 12:36:43 Debug: command 'bake' in plugin 'Bake' was not aliased, conflicts with 'Bake'
 2015-08-07 12:36:43 Debug: command 'migrations' in plugin 'Migrations' was not aliased, conflicts with 'Migrations'
+2015-08-28 03:21:38 Notice: Notice (8): Use of undefined constant add - assumed 'add' in [/var/www/html/softcontabil/tmp/Bake-Element-form-ctp.php, line 30]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 139
+include - ROOT/tmp/Bake-Element-form-ctp.php, line 30
+Bake\View\BakeView::_evaluate() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 179
+Cake\View\View::_render() - CORE/src/View/View.php, line 788
+Cake\View\View::_renderElement() - CORE/src/View/View.php, line 1155
+Cake\View\View::element() - CORE/src/View/View.php, line 376
+include - ROOT/tmp/add-ctp.php, line 16
+Bake\View\BakeView::_evaluate() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 179
+Cake\View\View::_render() - CORE/src/View/View.php, line 788
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 117
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 86
+Bake\Shell\Task\TemplateTask::getContent() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 402
+Bake\Shell\Task\TemplateTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 368
+Bake\Shell\Task\TemplateTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 144
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 391
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 386
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 126
+[main] - ROOT/bin/cake.php, line 33
+
+
+
+2015-08-28 03:22:21 Notice: Notice (8): Use of undefined constant add - assumed 'add' in [/var/www/html/softcontabil/tmp/Bake-Element-form-ctp.php, line 30]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 139
+include - ROOT/tmp/Bake-Element-form-ctp.php, line 30
+Bake\View\BakeView::_evaluate() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 179
+Cake\View\View::_render() - CORE/src/View/View.php, line 788
+Cake\View\View::_renderElement() - CORE/src/View/View.php, line 1155
+Cake\View\View::element() - CORE/src/View/View.php, line 376
+include - ROOT/tmp/add-ctp.php, line 16
+Bake\View\BakeView::_evaluate() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 179
+Cake\View\View::_render() - CORE/src/View/View.php, line 788
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 117
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 86
+Bake\Shell\Task\TemplateTask::getContent() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 402
+Bake\Shell\Task\TemplateTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 368
+Bake\Shell\Task\TemplateTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 144
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 391
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 386
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 126
+[main] - ROOT/bin/cake.php, line 33
+
+
+
+2015-08-28 03:23:20 Notice: Notice (8): Use of undefined constant add - assumed 'add' in [/var/www/html/softcontabil/tmp/Bake-Element-form-ctp.php, line 30]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 139
+include - ROOT/tmp/Bake-Element-form-ctp.php, line 30
+Bake\View\BakeView::_evaluate() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 179
+Cake\View\View::_render() - CORE/src/View/View.php, line 788
+Cake\View\View::_renderElement() - CORE/src/View/View.php, line 1155
+Cake\View\View::element() - CORE/src/View/View.php, line 376
+include - ROOT/tmp/add-ctp.php, line 16
+Bake\View\BakeView::_evaluate() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 179
+Cake\View\View::_render() - CORE/src/View/View.php, line 788
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 117
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 86
+Bake\Shell\Task\TemplateTask::getContent() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 402
+Bake\Shell\Task\TemplateTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 368
+Bake\Shell\Task\TemplateTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 144
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 391
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 386
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 126
+[main] - ROOT/bin/cake.php, line 33
+
+
+

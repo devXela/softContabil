@@ -11,7 +11,7 @@ use Cake\Validation\Validator;
  * Clientes Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Empresas
- * @property \Cake\ORM\Association\BelongsTo $CategoriaClientes
+ * @property \Cake\ORM\Association\BelongsTo $ClientesCategorias
  * @property \Cake\ORM\Association\HasMany $ContasAReceber
  */
 class ClientesTable extends Table
@@ -34,8 +34,8 @@ class ClientesTable extends Table
             'foreignKey' => 'empresa_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsTo('CategoriaClientes', [
-            'foreignKey' => 'categoria_clientes_id',
+        $this->belongsTo('ClientesCategorias', [
+            'foreignKey' => 'clientes_categorias_id',
             'joinType' => 'INNER'
         ]);
         $this->hasMany('ContasAReceber', [
@@ -101,7 +101,7 @@ class ClientesTable extends Table
     {
         $rules->add($rules->isUnique(['email']));
         $rules->add($rules->existsIn(['empresa_id'], 'Empresas'));
-        $rules->add($rules->existsIn(['categoria_clientes_id'], 'CategoriaClientes'));
+        $rules->add($rules->existsIn(['clientes_categorias_id'], 'ClientesCategorias'));
         return $rules;
     }
 }

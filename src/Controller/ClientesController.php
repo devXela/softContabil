@@ -19,7 +19,7 @@ class ClientesController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Empresas', 'CategoriaClientes']
+            'contain' => ['Empresas', 'ClientesCategorias']
         ];
         $this->set('clientes', $this->paginate($this->Clientes));
         $this->set('_serialize', ['clientes']);
@@ -35,7 +35,7 @@ class ClientesController extends AppController
     public function view($id = null)
     {
         $cliente = $this->Clientes->get($id, [
-            'contain' => ['Empresas', 'CategoriaClientes', 'ContasAReceber']
+            'contain' => ['Empresas', 'ClientesCategorias', 'ContasAReceber']
         ]);
         $this->set('cliente', $cliente);
         $this->set('_serialize', ['cliente']);
@@ -59,8 +59,8 @@ class ClientesController extends AppController
             }
         }
         $empresas = $this->Clientes->Empresas->find('list', ['limit' => 200]);
-        $categoriaClientes = $this->Clientes->CategoriaClientes->find('list', ['limit' => 200]);
-        $this->set(compact('cliente', 'empresas', 'categoriaClientes'));
+        $ClientesCategorias = $this->Clientes->ClientesCategorias->find('list', ['limit' => 200]);
+        $this->set(compact('cliente', 'empresas', 'ClientesCategorias'));
         $this->set('_serialize', ['cliente']);
     }
 
@@ -86,8 +86,8 @@ class ClientesController extends AppController
             }
         }
         $empresas = $this->Clientes->Empresas->find('list', ['limit' => 200]);
-        $categoriaClientes = $this->Clientes->CategoriaClientes->find('list', ['limit' => 200]);
-        $this->set(compact('cliente', 'empresas', 'categoriaClientes'));
+        $ClientesCategorias = $this->Clientes->ClientesCategorias->find('list', ['limit' => 200]);
+        $this->set(compact('cliente', 'empresas', 'ClientesCategorias'));
         $this->set('_serialize', ['cliente']);
     }
 

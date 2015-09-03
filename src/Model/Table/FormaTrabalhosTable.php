@@ -26,12 +26,11 @@ class FormaTrabalhosTable extends Table
         parent::initialize($config);
 
         $this->table('forma_trabalhos');
-        $this->displayField('id');
+        $this->displayField('descricao');
         $this->primaryKey('id');
         $this->belongsToMany('Empresas', [
             'foreignKey' => 'forma_trabalho_id',
-            'targetForeignKey' => 'empresa_id',
-            'joinTable' => 'empresas_forma_trabalhos'
+            'joinType' => 'INNER'
         ]);
     }
 

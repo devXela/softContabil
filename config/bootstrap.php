@@ -184,9 +184,11 @@ Inflector::rules('irregular', [
 Inflector::rules('plural', [
     '/(fornecedor)$/i' => '\1es',
     '/(retenc)ao$/i' => '\1oes',
+    '/(tributac)ao$/i' => '\1oes',
     '/(setor)$/i' => '\1es',
 ]);
 Inflector::rules('singular', [
+    '/(tributac)oes$/i' => '\1ao',
     '/(fornecedor)es$/i' => '\1',
     '/(retenc)oes$/i' => '\1ao',
     '/(setor)es$/i' => '\1',
@@ -203,6 +205,7 @@ Inflector::rules('singular', [
  */
 
 Plugin::load('Migrations');
+Plugin::load('Admin');
 
 // Only try to load DebugKit in development mode
 // Debug Kit should not be installed on a production system

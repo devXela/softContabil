@@ -20,17 +20,15 @@ use Cake\View\Helper;
  */
 class CamposFormHelper extends Helper
 {
-  public $helpers = ['Html'];
+	public $helpers = ['Html','Form'];
 
-    /**
-     * Initialization hook method.
-     *
-     * For e.g. use this method to load a helper for all views:
-     * `$this->loadHelper('Html');`
-     *
-     * @return void
-     */
-    public function initialize()
-    {
-    }
+	public function finalizaForm($textoBotao)
+	{
+		$boxFooter = $this->Html->div(
+			"box-footer",
+			$this->Form->button($textoBotao, ["class" => "btn btn-primary"])
+		);		
+		$finalForm = $this->Form->end();
+		return $boxFooter.$finalForm;
+	}
 }

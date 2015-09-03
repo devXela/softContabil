@@ -32,7 +32,7 @@ class AppController extends Controller
      *
      * Use this method to add common initialization code like loading components.
      *
-     * @return void
+     * @return vpopmail_del_domain(domain)
      */
     public function initialize()
     {
