@@ -11,6 +11,7 @@
 			<?= $this->Form->input('cnpj', [ 'placeholder' => ucfirst('cnpj') ]) ?>
 			<?= $this->Form->input('email', [ 'placeholder' => ucfirst('email') ]) ?>
 			<?= $this->Form->input('atividade_empresa_id', ['options' => $atividadeEmpresas]) ?>
+			
 			<?= $this->Form->input('empresas_tipos_id', ['options' => $EmpresasTipos]) ?>
 			<?= $this->Form->input('empresas_forma_tributacao_id', ['options' => $EmpresasFormaTributacoes]) ?>
 			<?= $this->Form->input('forma_trabalhos_id', ['options' => $formaTrabalhos]) ?>

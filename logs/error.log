@@ -34017,3 +34017,21 @@ Stack Trace:
 #3 {main}
 
 
+2015-09-04 04:59:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-04 05:00:00 Error: [Cake\Controller\Exception\MissingActionException] Action BancosController::empresas() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'BancosController',
+  'action' => 'empresas',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/bancos/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BancosController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-04 05:00:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-04 05:00:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
