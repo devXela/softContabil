@@ -14,6 +14,6 @@ class AddForeignKeys extends AbstractMigration
      */
     public function up()
     {
-        $this->table(k)
+
     }
 }
