@@ -6,7 +6,7 @@ use Cake\ORM\Entity;
 /**
  * EmpresasFormaTributaco Entity.
  */
-class EmpresasFormaTributaco extends Entity
+class EmpresasFormaTributacoes extends Entity
 {
 
     /**

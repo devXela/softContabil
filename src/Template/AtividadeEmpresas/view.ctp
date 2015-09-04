@@ -10,7 +10,7 @@
     </ul>
 </div>
 <div class="atividadeEmpresas view large-10 medium-9 columns">
-    <h2><?= h($atividadeEmpresa->id) ?></h2>
+    <h2><?= h($atividadeEmpresa->descricao) ?></h2>
     <div class="row">
         <div class="large-5 columns strings">
             <h6 class="subheader"><?= __('Descricao') ?></h6>
@@ -30,8 +30,8 @@
         <tr>
             <th><?= __('Id') ?></th>
             <th><?= __('Atividade Empresa Id') ?></th>
-            <th><?= __('Tipo Empresa Id') ?></th>
-            <th><?= __('Forma Tributacao Empresa Id') ?></th>
+            <th><?= __('Empresas Tipos Id') ?></th>
+            <th><?= __('Empresas Forma Tributacao Id') ?></th>
             <th><?= __('Cnpj') ?></th>
             <th><?= __('Email') ?></th>
             <th><?= __('Nome Empresa') ?></th>
@@ -39,14 +39,15 @@
             <th><?= __('Percentual Multa') ?></th>
             <th><?= __('Created') ?></th>
             <th><?= __('Modified') ?></th>
+            <th><?= __('Forma Trabalhos Id') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
         <?php foreach ($atividadeEmpresa->empresas as $empresas): ?>
         <tr>
             <td><?= h($empresas->id) ?></td>
             <td><?= h($empresas->atividade_empresa_id) ?></td>
-            <td><?= h($empresas->tipo_empresa_id) ?></td>
-            <td><?= h($empresas->forma_tributacao_empresa_id) ?></td>
+            <td><?= h($empresas->empresas_tipos_id) ?></td>
+            <td><?= h($empresas->empresas_forma_tributacao_id) ?></td>
             <td><?= h($empresas->cnpj) ?></td>
             <td><?= h($empresas->email) ?></td>
             <td><?= h($empresas->nome_empresa) ?></td>
@@ -54,6 +55,7 @@
             <td><?= h($empresas->percentual_multa) ?></td>
             <td><?= h($empresas->created) ?></td>
             <td><?= h($empresas->modified) ?></td>
+            <td><?= h($empresas->forma_trabalhos_id) ?></td>
 
             <td class="actions">
                 <?= $this->Html->link(__('View'), ['controller' => 'Empresas', 'action' => 'view', $empresas->id]) ?>

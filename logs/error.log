@@ -1,0 +1,1604 @@
+2015-08-07 02:24:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 04:01:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 04:12:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 04:44:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:13:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:13:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:14:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:14:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:14:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class ClasseFornecedor could not be found.
+Exception Attributes: array (
+  'class' => 'ClasseFornecedor',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/classeFornecedor
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-07 12:14:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:14:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:16:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:16:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:16:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:17:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:18:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:18:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:18:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:18:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 12:18:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:09:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:09:59 Error: [Cake\Database\Exception] Cannot describe tipo_empresas. It has 0 columns.
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('tipo_empresas', Array)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('tipo_empresas')
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Association.php(345): Cake\ORM\Table->primaryKey()
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Association/BelongsTo.php(167): Cake\ORM\Association->bindingKey()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Association.php(525): Cake\ORM\Association\BelongsTo->_joinCondition(Array)
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(326): Cake\ORM\Association->attachTo(Object(Cake\ORM\Query), Array)
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\EmpresasTable), true)
+#8 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#9 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(89): Cake\ORM\Query->sql()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Postgres->prepare(Object(Cake\ORM\Query))
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#13 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#14 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#15 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#16 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#17 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#18 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#19 [internal function]: App\Controller\EmpresasController->index()
+#20 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#21 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#22 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#23 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 {main}
+
+
+2015-08-07 13:10:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:10:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tipoempresas could not be found.
+Exception Attributes: array (
+  'class' => 'Tipoempresas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/tipoempresas
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-07 13:10:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:10:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class TipoEmpresas could not be found.
+Exception Attributes: array (
+  'class' => 'TipoEmpresas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/tipoEmpresas
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-07 13:10:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:10:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class TipoEmpresas could not be found.
+Exception Attributes: array (
+  'class' => 'TipoEmpresas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/TipoEmpresas
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-07 13:10:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:10:38 Error: [Cake\Database\Exception] Cannot describe tipo_empresas. It has 0 columns.
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('tipo_empresas', Array)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('tipo_empresas')
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Association.php(345): Cake\ORM\Table->primaryKey()
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Association/BelongsTo.php(167): Cake\ORM\Association->bindingKey()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Association.php(525): Cake\ORM\Association\BelongsTo->_joinCondition(Array)
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(326): Cake\ORM\Association->attachTo(Object(Cake\ORM\Query), Array)
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\EmpresasTable), true)
+#8 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#9 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(89): Cake\ORM\Query->sql()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Postgres->prepare(Object(Cake\ORM\Query))
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#13 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#14 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#15 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#16 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#17 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#18 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#19 [internal function]: App\Controller\EmpresasController->index()
+#20 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#21 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#22 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#23 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 {main}
+
+
+2015-08-07 13:10:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:10:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Empresastipos could not be found.
+Exception Attributes: array (
+  'class' => 'Empresastipos',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/empresastipos
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-07 13:12:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:12:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:17:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:17:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:17:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:17:38 Error: [Cake\Database\Exception] Cannot describe tipo_empresas. It has 0 columns.
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('tipo_empresas', Array)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('tipo_empresas')
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Association.php(345): Cake\ORM\Table->primaryKey()
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Association/BelongsTo.php(167): Cake\ORM\Association->bindingKey()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Association.php(525): Cake\ORM\Association\BelongsTo->_joinCondition(Array)
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(326): Cake\ORM\Association->attachTo(Object(Cake\ORM\Query), Array)
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\EmpresasTable), true)
+#8 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#9 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(89): Cake\ORM\Query->sql()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Postgres->prepare(Object(Cake\ORM\Query))
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#13 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#14 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#15 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#16 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#17 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#18 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#19 [internal function]: App\Controller\EmpresasController->index()
+#20 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#21 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#22 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#23 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 {main}
+
+
+2015-08-07 13:22:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:22:47 Error: [InvalidArgumentException] Empresas is not associated with TipoEmpresas
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(233): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\EmpresasTable), 'TipoEmpresas', Array, Array)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(341): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\EmpresasTable))
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(320): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\EmpresasTable))
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\EmpresasTable), true)
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(89): Cake\ORM\Query->sql()
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Postgres->prepare(Object(Cake\ORM\Query))
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#13 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#14 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#15 [internal function]: App\Controller\EmpresasController->index()
+#16 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#17 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#19 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-08-07 13:25:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:25:18 Error: [InvalidArgumentException] Empresas is not associated with TipoEmpresas
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(233): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\EmpresasTable), 'TipoEmpresas', Array, Array)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(341): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\EmpresasTable))
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(320): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\EmpresasTable))
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\EmpresasTable), true)
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(89): Cake\ORM\Query->sql()
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Postgres->prepare(Object(Cake\ORM\Query))
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#13 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#14 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#15 [internal function]: App\Controller\EmpresasController->index()
+#16 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#17 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#19 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-08-07 13:26:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:26:43 Error: [InvalidArgumentException] Empresas is not associated with TipoEmpresas
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(233): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\EmpresasTable), 'TipoEmpresas', Array, Array)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(341): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\EmpresasTable))
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(320): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\EmpresasTable))
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\EmpresasTable), true)
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(89): Cake\ORM\Query->sql()
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Postgres->prepare(Object(Cake\ORM\Query))
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#13 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#14 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#15 [internal function]: App\Controller\EmpresasController->index()
+#16 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#17 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#19 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-08-07 13:29:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:29:10 Error: [InvalidArgumentException] Empresas is not associated with FormaTributacaoEmpresas
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(233): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\EmpresasTable), 'FormaTributacao...', Array, Array)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(341): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\EmpresasTable))
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(320): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\EmpresasTable))
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\EmpresasTable), true)
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(89): Cake\ORM\Query->sql()
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Postgres->prepare(Object(Cake\ORM\Query))
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#13 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#14 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#15 [internal function]: App\Controller\EmpresasController->index()
+#16 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#17 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#19 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-08-07 13:31:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:31:26 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column empresas.empresa_tipos_id does not exist
+LINE 1: ...presas_tipos EmpresasTipos ON EmpresasTipos.id = (Empresas.e...
+                                                             ^
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): PDOStatement->execute(NULL)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Statement\StatementDecorator->execute()
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#8 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#9 [internal function]: App\Controller\EmpresasController->index()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#13 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-08-07 13:33:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:33:22 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column empresas.empresas_tipos_id does not exist
+LINE 1: ...presas_tipos EmpresasTipos ON EmpresasTipos.id = (Empresas.e...
+                                                             ^
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): PDOStatement->execute(NULL)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Statement\StatementDecorator->execute()
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#8 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#9 [internal function]: App\Controller\EmpresasController->index()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#13 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-08-07 13:52:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:52:56 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column empresas.tipo_empresa_id does not exist
+LINE 1: ...presas_tipos EmpresasTipos ON EmpresasTipos.id = (Empresas.t...
+                                                             ^
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): PDOStatement->execute(NULL)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Statement\StatementDecorator->execute()
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#8 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#9 [internal function]: App\Controller\EmpresasController->index()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#13 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-08-07 13:54:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:54:27 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column empresas.tipo_empresa_id does not exist
+LINE 1: ...presas_tipos EmpresasTipos ON EmpresasTipos.id = (Empresas.t...
+                                                             ^
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): PDOStatement->execute(NULL)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Statement\StatementDecorator->execute()
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#8 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#9 [internal function]: App\Controller\EmpresasController->index()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#13 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-08-07 13:55:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 13:55:42 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column empresas.empresas_forma_tributacao_id does not exist
+LINE 1: ...ormaTributacoes ON EmpresasFormaTributacoes.id = (Empresas.e...
+                                                             ^
+Request URL: /softcontabil/empresas
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): PDOStatement->execute(NULL)
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Statement\StatementDecorator->execute()
+#2 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(172): Cake\ORM\Query->all()
+#7 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EmpresasTable), Array)
+#8 /var/www/html/softcontabil/src/Controller/EmpresasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\EmpresasTable))
+#9 [internal function]: App\Controller\EmpresasController->index()
+#10 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#11 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#13 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-08-07 14:01:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:01:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:01:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:01:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:02:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:02:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:04:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:05:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:05:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Empresastipos could not be found.
+Exception Attributes: array (
+  'class' => 'Empresastipos',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/empresastipos
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-07 14:05:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:10:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:10:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:10:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:11:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:11:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:11:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:11:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:13:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:15:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:15:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:15:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:15:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:15:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:16:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:16:12 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::empresas_forma_tributacao() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'empresas_forma_tributacao',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/empresas_forma_tributacao
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-07 14:16:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:16:26 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::empresas_forma_tributacoes() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'empresas_forma_tributacoes',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/empresas_forma_tributacoes
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-07 14:16:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:16:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:16:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:16:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:16:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:17:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:19:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:20:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:22:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:38:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-07 14:38:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-09 22:34:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-09 22:34:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 00:49:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 00:50:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 00:50:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 00:50:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 10:59:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 10:59:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:07 Warning: Warning (2): Illegal offset type in isset or empty in [/var/www/html/softcontabil/vendor/cakephp/cakephp/src/View/ViewBlock.php, line 176]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 139
+Cake\View\ViewBlock::get() - CORE/src/View/ViewBlock.php, line 176
+Cake\View\View::fetch() - CORE/src/View/View.php, line 636
+include - APP/Template/Layout/default.ctp, line 35
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 828
+Cake\View\View::_render() - CORE/src/View/View.php, line 788
+Cake\View\View::renderLayout() - CORE/src/View/View.php, line 510
+Cake\View\View::render() - CORE/src/View/View.php, line 473
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-08-11 11:02:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Bootstrap could not be found.
+Exception Attributes: array (
+  'class' => 'Bootstrap',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/bootstrap/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/morris/morris.min.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/jQuery/jQuery-2.1.4.min.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/ionicons.ttf?v=2.0.1
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/sparkline/jquery.sparkline.min.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/jvectormap/jquery-jvectormap-world-mill-en.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/knob/jquery.knob.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/ionicons.woff?v=2.0.1
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/daterangepicker/daterangepicker.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/datepicker/bootstrap-datepicker.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/slimScroll/jquery.slimscroll.min.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Plugins could not be found.
+Exception Attributes: array (
+  'class' => 'Plugins',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/plugins/fastclick/fastclick.min.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/js/app.min.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/js/pages/dashboard.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:02:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:02:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/js/demo.js
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:05:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:05:26 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::js does not exist in [/var/www/html/softcontabil/vendor/cakephp/cakephp/src/View/Helper.php, line 138]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 139
+Cake\View\Helper::__call() - CORE/src/View/Helper.php, line 138
+Cake\View\Helper\HtmlHelper::js() - APP/Template/Layout/default.ctp, line 35
+include - APP/Template/Layout/default.ctp, line 35
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 828
+Cake\View\View::_render() - CORE/src/View/View.php, line 788
+Cake\View\View::renderLayout() - CORE/src/View/View.php, line 510
+Cake\View\View::render() - CORE/src/View/View.php, line 473
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-08-11 11:05:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:05:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:05:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:05:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:05:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:05:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:05:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:05:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:05:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:05:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/ionicons.ttf?v=2.0.1
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:05:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:05:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:05:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:05:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/ionicons.woff?v=2.0.1
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:05:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:05:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:06:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:06:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:06:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:06:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:06:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:06:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:06:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Dist could not be found.
+Exception Attributes: array (
+  'class' => 'Dist',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:06:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:06:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:06:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:06:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/ionicons.ttf?v=2.0.1
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:06:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:06:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:06:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:06:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/ionicons.woff?v=2.0.1
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:06:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:06:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:07:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:07:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:07:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:07:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:07:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/ionicons.ttf?v=2.0.1
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:07:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:07:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:07:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:07:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/ionicons.woff?v=2.0.1
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:07:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:07:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found.
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:12:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:22:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:25:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:26:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:26:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index2.html could not be found.
+Exception Attributes: array (
+  'class' => 'Index2.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/index2.html
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:26:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:27:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:29:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:32:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:33:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:33:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:34:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:39:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:39:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:39:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index2.html could not be found.
+Exception Attributes: array (
+  'class' => 'Index2.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/index2.html
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-11 11:39:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:44:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:49:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:50:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:51:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:53:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:54:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:54:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:56:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 11:56:45 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages/widgets.html.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/widgets.html.ctp',
+)
+Request URL: /softcontabil/pages/widgets.html
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/View/View.php(462): Cake\View\View->_getViewFileName('widgets.html')
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(582): Cake\View\View->render('widgets.html', NULL)
+#2 /var/www/html/softcontabil/src/Controller/PagesController.php(57): Cake\Controller\Controller->render('widgets.html')
+#3 [internal function]: App\Controller\PagesController->display('widgets.html')
+#4 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#5 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#7 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-08-11 11:56:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 12:00:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 12:02:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-11 23:06:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-16 23:32:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-16 23:54:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-16 23:54:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-16 23:54:25 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user2-160x160.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-16 23:54:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-16 23:54:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-16 23:54:25 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user4-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-16 23:54:25 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user3-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-16 23:58:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-16 23:58:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-16 23:58:46 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user2-160x160.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-16 23:58:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-16 23:58:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-16 23:58:50 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user3-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-16 23:58:50 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user4-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 00:01:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 00:01:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 00:01:49 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user2-160x160.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 00:01:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 00:01:51 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user3-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 00:01:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 00:01:53 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user4-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 00:01:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 00:01:53 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user2-160x160.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 00:05:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:14:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:14:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:14:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:14:31 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user2-160x160.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 02:14:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:14:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:14:31 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user4-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 02:14:31 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user3-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 02:16:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:16:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:16:25 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user3-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 02:16:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:16:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:16:25 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user4-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 02:16:25 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user2-160x160.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 02:17:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:17:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:17:10 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user3-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 02:17:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:17:11 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user4-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 02:17:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:17:12 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user2-160x160.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 02:17:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:17:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 02:17:13 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user3-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 02:17:13 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /softcontabil/empresas/img/user4-128x128.jpg
+Stack Trace:
+#0 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/softcontabil/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-17 21:14:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-17 21:14:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-18 13:13:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-18 13:18:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-21 14:26:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-21 14:27:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-25 12:22:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-25 12:23:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-25 12:23:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-25 12:23:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-08-25 12:23:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index2.html could not be found.
+Exception Attributes: array (
+  'class' => 'Index2.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/index2.html
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-25 12:23:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index2.html could not be found.
+Exception Attributes: array (
+  'class' => 'Index2.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /softcontabil/index2.html
+Stack Trace:
+#0 /var/www/html/softcontabil/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-27 20:28:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-04 08:36:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-04 08:39:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-04 08:39:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2015-09-04 08:41:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.

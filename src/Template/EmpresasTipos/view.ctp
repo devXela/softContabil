@@ -8,7 +8,7 @@
     </ul>
 </div>
 <div class="empresasTipos view large-10 medium-9 columns">
-    <h2><?= h($empresasTipo->id) ?></h2>
+    <h2><?= h($empresasTipo->descricao) ?></h2>
     <div class="row">
         <div class="large-5 columns strings">
             <h6 class="subheader"><?= __('Descricao') ?></h6>

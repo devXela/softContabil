@@ -31,11 +31,11 @@ class EmpresasFormaTributacoesController extends AppController
      */
     public function view($id = null)
     {
-        $empresasFormaTributaco = $this->EmpresasFormaTributacoes->get($id, [
+        $empresasFormaTributacoes = $this->EmpresasFormaTributacoes->get($id, [
             'contain' => []
         ]);
-        $this->set('empresasFormaTributaco', $empresasFormaTributaco);
-        $this->set('_serialize', ['empresasFormaTributaco']);
+        $this->set('empresasFormaTributacoes', $empresasFormaTributacoes);
+        $this->set('_serialize', ['empresasFormaTributacoes']);
     }
 
     /**
@@ -45,18 +45,18 @@ class EmpresasFormaTributacoesController extends AppController
      */
     public function add()
     {
-        $empresasFormaTributaco = $this->EmpresasFormaTributacoes->newEntity();
+        $empresasFormaTributacoes = $this->EmpresasFormaTributacoes->newEntity();
         if ($this->request->is('post')) {
-            $empresasFormaTributaco = $this->EmpresasFormaTributacoes->patchEntity($empresasFormaTributaco, $this->request->data);
-            if ($this->EmpresasFormaTributacoes->save($empresasFormaTributaco)) {
+            $empresasFormaTributacoes = $this->EmpresasFormaTributacoes->patchEntity($empresasFormaTributacoes, $this->request->data);
+            if ($this->EmpresasFormaTributacoes->save($empresasFormaTributacoes)) {
                 $this->Flash->success(__('The empresas forma tributaco has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
                 $this->Flash->error(__('The empresas forma tributaco could not be saved. Please, try again.'));
             }
         }
-        $this->set(compact('empresasFormaTributaco'));
-        $this->set('_serialize', ['empresasFormaTributaco']);
+        $this->set(compact('empresasFormaTributacoes'));
+        $this->set('_serialize', ['empresasFormaTributacoes']);
     }
 
     /**
@@ -68,20 +68,20 @@ class EmpresasFormaTributacoesController extends AppController
      */
     public function edit($id = null)
     {
-        $empresasFormaTributaco = $this->EmpresasFormaTributacoes->get($id, [
+        $empresasFormaTributacoes = $this->EmpresasFormaTributacoes->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $empresasFormaTributaco = $this->EmpresasFormaTributacoes->patchEntity($empresasFormaTributaco, $this->request->data);
-            if ($this->EmpresasFormaTributacoes->save($empresasFormaTributaco)) {
+            $empresasFormaTributacoes = $this->EmpresasFormaTributacoes->patchEntity($empresasFormaTributacoes, $this->request->data);
+            if ($this->EmpresasFormaTributacoes->save($empresasFormaTributacoes)) {
                 $this->Flash->success(__('The empresas forma tributaco has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
                 $this->Flash->error(__('The empresas forma tributaco could not be saved. Please, try again.'));
             }
         }
-        $this->set(compact('empresasFormaTributaco'));
-        $this->set('_serialize', ['empresasFormaTributaco']);
+        $this->set(compact('empresasFormaTributacoes'));
+        $this->set('_serialize', ['empresasFormaTributacoes']);
     }
 
     /**
@@ -94,8 +94,8 @@ class EmpresasFormaTributacoesController extends AppController
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $empresasFormaTributaco = $this->EmpresasFormaTributacoes->get($id);
-        if ($this->EmpresasFormaTributacoes->delete($empresasFormaTributaco)) {
+        $empresasFormaTributacoes = $this->EmpresasFormaTributacoes->get($id);
+        if ($this->EmpresasFormaTributacoes->delete($empresasFormaTributacoes)) {
             $this->Flash->success(__('The empresas forma tributaco has been deleted.'));
         } else {
             $this->Flash->error(__('The empresas forma tributaco could not be deleted. Please, try again.'));

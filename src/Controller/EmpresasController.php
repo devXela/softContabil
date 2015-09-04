@@ -19,7 +19,7 @@ class EmpresasController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['AtividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes']
+            'contain' => ['AtividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes', 'FormaTrabalhos']
         ];
         $this->set('empresas', $this->paginate($this->Empresas));
         $this->set('_serialize', ['empresas']);

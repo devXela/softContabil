@@ -32,11 +32,15 @@ class EmpresasTable extends Table
         parent::initialize($config);
 
         $this->table('empresas');
-        $this->displayField('id');
+        $this->displayField('nome_empresa');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');
         $this->belongsTo('AtividadeEmpresas', [
             'foreignKey' => 'atividade_empresa_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('FormaTrabalhos', [
+            'foreignKey' => 'forma_trabalhos_id',
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('EmpresasTipos', [
@@ -55,11 +59,6 @@ class EmpresasTable extends Table
         ]);
         $this->hasMany('Fornecedores', [
             'foreignKey' => 'empresa_id'
-        ]);
-        $this->belongsToMany('FormaTrabalhos', [
-            'foreignKey' => 'empresa_id',
-            'targetForeignKey' => 'forma_trabalho_id',
-            'joinTable' => 'empresas_forma_trabalhos'
         ]);
     }
 
@@ -112,9 +111,10 @@ class EmpresasTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->isUnique(['email']));
-        $rules->add($rules->existsIn(['atividade_empresa_id'], 'AtividadeEmpresas'));
-        $rules->add($rules->existsIn(['empresas_tipos_id'], 'EmpresasTipos'));
-        $rules->add($rules->existsIn(['empresas_forma_tributacao_id'], 'EmpresasFormaTributacoes'));
+        $rules->add($rules->existsIn(['atividade_empresa_id'], 'atividadeEmpresas'));
+        $rules->add($rules->existsIn(['empresas_tipos_id'], 'empresasTipos'));
+        $rules->add($rules->existsIn(['empresas_forma_tributacao_id'], 'empresasFormaTributacoes'));
+        $rules->add($rules->existsIn(['forma_trabalhos_id'], 'formaTrabalhos'));
         return $rules;
     }
 }
