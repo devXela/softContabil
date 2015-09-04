@@ -20,92 +20,85 @@ $fields = collection($fields)
     })
     ->take(7);
 ?>
-<div class="<?= $pluralVar ?> col-xs-12">
-	<div class="box">
-		<div class="box-header">
-			<h4><i class="fa fa-list"></i> Listagem</h4>
-		</div>
-		<div class="box-body">
-		    <table id="<?= $pluralVar ?>" class="table table-bordered table-hover">
-			    <thead>
-			        <tr>
-			    <?php foreach ($fields as $field): ?>
-			        <th><CakePHPBakeOpenTag= $this->Paginator->sort('<?= $field ?>') CakePHPBakeCloseTag></th>
-			    <?php endforeach; ?>
-			        <th class="actions"><CakePHPBakeOpenTag= __('Ações') CakePHPBakeCloseTag></th>
-			        </tr>
-			    </thead>
-			    <tbody>
-			    <CakePHPBakeOpenTagphp 
-			    	if (empty($<?= $pluralVar ?>->toArray())) {
-			    		echo "<tr><td colspan='100%' class='text-center'>Não existem registros</td></tr>"; 
-			    	}else{
+<div class="actions columns large-2 medium-3">
+    <h3><CakePHPBakeOpenTag= __('Actions') CakePHPBakeCloseTag></h3>
+    <ul class="side-nav">
+        <li><CakePHPBakeOpenTag= $this->Html->link(__('New <?= $singularHumanName ?>'), ['action' => 'add']) CakePHPBakeCloseTag></li>
+<?php
+    $done = [];
+    foreach ($associations as $type => $data):
+        foreach ($data as $alias => $details):
+            if (!empty($details['navLink']) && $details['controller'] !== $this->name && !in_array($details['controller'], $done)):
+?>
+        <li><CakePHPBakeOpenTag= $this->Html->link(__('List <?= $this->_pluralHumanName($alias) ?>'), ['controller' => '<?= $details['controller'] ?>', 'action' => 'index']) CakePHPBakeCloseTag></li>
+        <li><CakePHPBakeOpenTag= $this->Html->link(__('New <?= $this->_singularHumanName($alias) ?>'), ['controller' => '<?= $details['controller'] ?>', 'action' => 'add']) CakePHPBakeCloseTag></li>
+<?php
+                $done[] = $details['controller'];
+            endif;
+        endforeach;
+    endforeach;
+?>
+    </ul>
+</div>
+<div class="<?= $pluralVar ?> index large-10 medium-9 columns">
+    <table cellpadding="0" cellspacing="0">
+    <thead>
+        <tr>
+    <?php foreach ($fields as $field): ?>
+        <th><CakePHPBakeOpenTag= $this->Paginator->sort('<?= $field ?>') CakePHPBakeCloseTag></th>
+    <?php endforeach; ?>
+        <th class="actions"><CakePHPBakeOpenTag= __('Actions') CakePHPBakeCloseTag></th>
+        </tr>
+    </thead>
+    <tbody>
+    <CakePHPBakeOpenTagphp foreach ($<?= $pluralVar ?> as $<?= $singularVar ?>): CakePHPBakeCloseTag>
+        <tr>
+<?php        foreach ($fields as $field) {
+            $isKey = false;
+            if (!empty($associations['BelongsTo'])) {
+                foreach ($associations['BelongsTo'] as $alias => $details) {
+                    if ($field === $details['foreignKey']) {
+                        $isKey = true;
+?>
+            <td>
+                <CakePHPBakeOpenTag= $<?= $singularVar ?>->has('<?= $details['property'] ?>') ? $this->Html->link($<?= $singularVar ?>-><?= $details['property'] ?>-><?= $details['displayField'] ?>, ['controller' => '<?= $details['controller'] ?>', 'action' => 'view', $<?= $singularVar ?>-><?= $details['property'] ?>-><?= $details['primaryKey'][0] ?>]) : '' CakePHPBakeCloseTag>
+            </td>
+<?php
+                        break;
+                    }
+                }
+            }
+            if ($isKey !== true) {
+                if (!in_array($schema->columnType($field), ['integer', 'biginteger', 'decimal', 'float'])) {
+?>
+            <td><CakePHPBakeOpenTag= h($<?= $singularVar ?>-><?= $field ?>) CakePHPBakeCloseTag></td>
+<?php
+                } else {
+?>
+            <td><CakePHPBakeOpenTag= $this->Number->format($<?= $singularVar ?>-><?= $field ?>) CakePHPBakeCloseTag></td>
+<?php
+                }
+            }
+        }
 
-			    	foreach ($<?= $pluralVar ?> as $<?= $singularVar ?>): 
-			    CakePHPBakeCloseTag>
-				        <tr>
-				<?php        foreach ($fields as $field) {
-				            $isKey = false;
-				            if (!empty($associations['BelongsTo'])) {
-				                foreach ($associations['BelongsTo'] as $alias => $details) {
-				                    if ($field === $details['foreignKey']) {
-				                        $isKey = true;
-				?>
-				            <td>
-				                <CakePHPBakeOpenTag= $<?= $singularVar ?>->has('<?= $details['property'] ?>') ? $this->Html->link($<?= $singularVar ?>-><?= $details['property'] ?>-><?= $details['displayField'] ?>, ['controller' => '<?= $details['controller'] ?>', 'action' => 'view', $<?= $singularVar ?>-><?= $details['property'] ?>-><?= $details['primaryKey'][0] ?>]) : '' CakePHPBakeCloseTag>
-				            </td>
-				<?php
-				                        break;
-				                    }
-				                }
-				            }
-				            if ($isKey !== true) {
-				                if (!in_array($schema->columnType($field), ['integer', 'biginteger', 'decimal', 'float'])) {
-				?>
-				            <td><CakePHPBakeOpenTag= h($<?= $singularVar ?>-><?= $field ?>) CakePHPBakeCloseTag></td>
-				<?php
-				                } else {
-				?>
-				            <td><CakePHPBakeOpenTag= $this->Number->format($<?= $singularVar ?>-><?= $field ?>) CakePHPBakeCloseTag></td>
-				<?php
-				                }
-				            }
-				        }
+        $pk = '$' . $singularVar . '->' . $primaryKey[0];
+?>
+            <td class="actions">
+                <CakePHPBakeOpenTag= $this->Html->link(__('View'), ['action' => 'view', <?= $pk ?>]) CakePHPBakeCloseTag>
+                <CakePHPBakeOpenTag= $this->Html->link(__('Edit'), ['action' => 'edit', <?= $pk ?>]) CakePHPBakeCloseTag>
+                <CakePHPBakeOpenTag= $this->Form->postLink(__('Delete'), ['action' => 'delete', <?= $pk ?>], ['confirm' => __('Are you sure you want to delete # {0}?', <?= $pk ?>)]) CakePHPBakeCloseTag>
+            </td>
+        </tr>
 
-				        $pk = '$' . $singularVar . '->' . $primaryKey[0];
-				?>
-				            <td class="actions">
-				                <CakePHPBakeOpenTag= $this->Html->link(__('View'), ['action' => 'view', <?= $pk ?>]) CakePHPBakeCloseTag>
-				                <CakePHPBakeOpenTag= $this->Html->link(__('Edit'), ['action' => 'edit', <?= $pk ?>]) CakePHPBakeCloseTag>
-				                <CakePHPBakeOpenTag= $this->Form->postLink(__('Delete'), ['action' => 'delete', <?= $pk ?>], ['confirm' => __('Are you sure you want to delete # {0}?', <?= $pk ?>)]) CakePHPBakeCloseTag>
-				            </td>
-				        </tr>
-
-				    <CakePHPBakeOpenTagphp endforeach; 
-			    	}CakePHPBakeCloseTag>
-			    </tbody>
-		    </table>
-		</div>
-	</div>
+    <CakePHPBakeOpenTagphp endforeach; CakePHPBakeCloseTag>
+    </tbody>
+    </table>
     <div class="paginator">
         <ul class="pagination">
             <CakePHPBakeOpenTag= $this->Paginator->prev('< ' . __('previous')) CakePHPBakeCloseTag>
             <CakePHPBakeOpenTag= $this->Paginator->numbers() CakePHPBakeCloseTag>
             <CakePHPBakeOpenTag= $this->Paginator->next(__('next') . ' >') CakePHPBakeCloseTag>
         </ul>
-        <!-- <p><CakePHPBakeOpenTag= $this->Paginator->counter() CakePHPBakeCloseTag></p> -->
+        <p><CakePHPBakeOpenTag= $this->Paginator->counter() CakePHPBakeCloseTag></p>
     </div>
 </div>
-<script type="text/javascript">
-	$(function () {
-		$('#<?= $pluralVar ?>').DataTable({
-			"paging": true,
-			"lengthChange": false,
-			"searching": false,
-			"ordering": true,
-			"info": true,
-			"autoWidth": false
-		});
-	});
-
-</script>
