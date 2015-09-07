@@ -20,7 +20,7 @@
 					<th class="text-center">Atividade empresas</th>
 					<th class="text-center">Tipo empresa</th>
 					<th class="text-center">CNPJ</th>
-					<th class="text-center">Status</th>
+					<!-- <th class="text-center">Status</th> -->
 					<th class="text-center">Email</th>
 					<th class="text-center">&nbsp;</th>
 				</thead>
@@ -31,19 +31,19 @@
 						}else{
 							foreach ($empresas as $empresa): 
 					?>
-						<tr>
+						<tr class="text-center">
+							<td><?= h($empresa->nome_empresa) ?></td>
 							<td>
-								<?= $empresa->has('atividade_empresa') ? $this->Html->link($empresa->atividade_empresa->id, ['controller' => 'AtividadeEmpresas', 'action' => 'view', $empresa->atividade_empresa->id]) : '' ?>
+								<?= $empresa->has('atividade_empresa') ? $this->Html->link($empresa->atividade_empresa->descricao, ['controller' => 'AtividadeEmpresas', 'action' => 'view', $empresa->atividade_empresa->id]) : '' ?>
 							</td>
 							<td><?= $this->Number->format($empresa->tipo_empresa_id) ?></td>
-							<td><?= $this->Number->format($empresa->forma_tributacao_empresa_id) ?></td>
 							<td><?= $this->Number->format($empresa->cnpj) ?></td>
+							<!-- <td><?= h($empresa->status) ?></td> -->
 							<td><?= h($empresa->email) ?></td>
-							<td><?= h($empresa->nome_empresa) ?></td>
 							<td class="actions">
-								<?= $this->Html->link(__('View'), ['action' => 'view', $empresa->id]) ?>
-								<?= $this->Html->link(__('Edit'), ['action' => 'edit', $empresa->id]) ?>
-								<?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $empresa->id], ['confirm' => __('Are you sure you want to delete # {0}?', $empresa->id)]) ?>
+								<button class="btn btn-info btn-sm"><?= $this->Html->link('<i class="fa fa-eye"></i> Ver', ['action' => 'view', $empresa->id], ['escape' => false]) ?></button>
+								<button class="btn btn-warning btn-sm"><?= $this->Html->link('<i class="fa fa-edit"></i> Editar', ['action' => 'edit', $empresa->id], ['escape' => false]) ?></button>
+								<button class="btn btn-danger btn-sm"><?= $this->Form->postLink('<i class="fa fa-trash-o"></i> Excluir', ['action' => 'delete', $empresa->id], ['confirm' => __('Are you sure you want to delete # {0}?', $empresa->id), 'escape' => false]) ?></button>
 							</td>
 						</tr>
 
