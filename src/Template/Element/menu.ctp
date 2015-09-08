@@ -59,8 +59,12 @@
 				<i class="fa fa-angle-left pull-right"></i>
 			</a>
 			<ul class="treeview-menu">
-				<li><a href="atividadeEmpresas"><i class="fa fa-list-alt"></i> Listar atividades</a></li>
-				<li><a href="atividadeEmpresas/add"><i class="fa fa-upload"></i> Nova atividade</a></li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-list-alt"></i> Listar atividades', '/atividadeEmpresas', ['escape' => false]) ?>
+				</li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-upload"></i> Nova atividade ', '/atividadeEmpresas/add', ['escape' => false]) ?>
+				</li>
 			</ul>
 		</li>
 		<li class="treeview">
@@ -69,8 +73,12 @@
 				<i class="fa fa-angle-left pull-right"></i>
 			</a>
 			<ul class="treeview-menu">
-				<li><a href="bancos"><i class="fa fa-list-alt"></i> Listar bancos</a></li>
-				<li><a href="bancos/add"><i class="fa fa-upload"></i> Novo banco</a></li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-list-alt"></i> Listar bancos', '/bancos', ['escape' => false]) ?>
+				</li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-upload"></i> Novo bancos', '/bancos/add', ['escape' => false]) ?>
+				</li>
 			</ul>
 		</li>
 		<li class="treeview">
@@ -79,8 +87,12 @@
 				<i class="fa fa-angle-left pull-right"></i>
 			</a>
 			<ul class="treeview-menu">
-				<li><a href="fornecedores"><i class="fa fa-list-alt"></i> Listar fornecedores</a></li>
-				<li><a href="fornecedores/add"><i class="fa fa-upload"></i> Novo fornecedor</a></li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-list-alt"></i> Listar fornecedores', '/bancos', ['escape' => false]) ?>
+				</li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-upload"></i> Novo fornecedor', '/bancos/add', ['escape' => false]) ?>
+				</li>
 			</ul>
 		</li>
 		<li class="treeview">
@@ -89,8 +101,12 @@
 				<i class="fa fa-angle-left pull-right"></i>
 			</a>
 			<ul class="treeview-menu">
-				<li><a href="classeFornecedores"><i class="fa fa-list-alt"></i> Listar classes</a></li>
-				<li><a href="classeFornecedores/add"><i class="fa fa-upload"></i> Nova classe</a></li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-list-alt"></i> Listar classes', '/classeFornecedores', ['escape' => false]) ?>
+				</li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-upload"></i> Nova classe', '/classeFornecedores/add', ['escape' => false]) ?>
+				</li>
 			</ul>
 		</li>
 		<li class="treeview">
@@ -99,8 +115,12 @@
 				<i class="fa fa-angle-left pull-right"></i>
 			</a>
 			<ul class="treeview-menu">
-				<li><a href="clientes"><i class="fa fa-list-alt"></i> Listar clientes</a></li>
-				<li><a href="clientes/add"><i class="fa fa-upload"></i> Novo cliente</a></li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-list-alt"></i> Listar clientes', '/clientes', ['escape' => false]) ?>
+				</li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-upload"></i> Novo cliente', '/clientes/add', ['escape' => false]) ?>
+				</li>
 			</ul>
 		</li>
 		<li class="treeview">
@@ -109,8 +129,12 @@
 				<i class="fa fa-angle-left pull-right"></i>
 			</a>
 			<ul class="treeview-menu">
-				<li><a href="empresas"><i class="fa fa-list-alt"></i> Listar empresas</a></li>
-				<li><a href="empresas/add"><i class="fa fa-upload"></i> Nova empresa</a></li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-list-alt"></i> Listar empresas', '/empresas', ['escape' => false]) ?>
+				</li>
+				<li>
+					<?= $this->Html->link('<i class="fa fa-upload"></i> Nova empresa', '/empresas/add', ['escape' => false]) ?>
+				</li>
 			</ul>
 		</li>
 	</ul>

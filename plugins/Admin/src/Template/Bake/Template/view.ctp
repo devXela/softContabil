@@ -51,29 +51,7 @@ $groupedFields = collection($fields)
 $groupedFields += ['number' => [], 'string' => [], 'boolean' => [], 'date' => [], 'text' => []];
 $pk = "\$$singularVar->{$primaryKey[0]}";
 %>
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('Edit <%= $singularHumanName %>'), ['action' => 'edit', <%= $pk %>]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete <%= $singularHumanName %>'), ['action' => 'delete', <%= $pk %>], ['confirm' => __('Are you sure you want to delete # {0}?', <%= $pk %>)]) ?> </li>
-        <li><?= $this->Html->link(__('List <%= $pluralHumanName %>'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New <%= $singularHumanName %>'), ['action' => 'add']) ?> </li>
-<%
-    $done = [];
-    foreach ($associations as $type => $data) {
-        foreach ($data as $alias => $details) {
-            if ($details['controller'] !== $this->name && !in_array($details['controller'], $done)) {
-%>
-        <li><?= $this->Html->link(__('List <%= $this->_pluralHumanName($alias) %>'), ['controller' => '<%= $details['controller'] %>', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New <%= Inflector::humanize(Inflector::singularize(Inflector::underscore($alias))) %>'), ['controller' => '<%= $details['controller'] %>', 'action' => 'add']) ?> </li>
-<%
-                $done[] = $details['controller'];
-            }
-        }
-    }
-%>
-    </ul>
-</div>
+
 <div class="<%= $pluralVar %> view large-10 medium-9 columns">
     <h2><?= h($<%= $singularVar %>-><%= $displayField %>) ?></h2>
     <div class="row">

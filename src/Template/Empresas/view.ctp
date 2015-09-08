@@ -1,40 +1,24 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('Edit Empresa'), ['action' => 'edit', $empresa->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Empresa'), ['action' => 'delete', $empresa->id], ['confirm' => __('Are you sure you want to delete # {0}?', $empresa->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Empresas'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Empresa'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Atividade Empresas'), ['controller' => 'AtividadeEmpresas', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Atividade Empresa'), ['controller' => 'AtividadeEmpresas', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Clientes'), ['controller' => 'Clientes', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Cliente'), ['controller' => 'Clientes', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Diretorias'), ['controller' => 'Diretorias', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Diretoria'), ['controller' => 'Diretorias', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Fornecedores'), ['controller' => 'Fornecedores', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Fornecedor'), ['controller' => 'Fornecedores', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Forma Trabalhos'), ['controller' => 'FormaTrabalhos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Forma Trabalho'), ['controller' => 'FormaTrabalhos', 'action' => 'add']) ?> </li>
-    </ul>
-</div>
+
 <div class="empresas view large-10 medium-9 columns">
-    <h2><?= h($empresa->id) ?></h2>
+    <h2><?= h($empresa->nome_empresa) ?></h2>
     <div class="row">
         <div class="large-5 columns strings">
             <h6 class="subheader"><?= __('Atividade Empresa') ?></h6>
-            <p><?= $empresa->has('atividade_empresa') ? $this->Html->link($empresa->atividade_empresa->id, ['controller' => 'AtividadeEmpresas', 'action' => 'view', $empresa->atividade_empresa->id]) : '' ?></p>
+            <p><?= $empresa->has('atividade_empresa') ? $this->Html->link($empresa->atividade_empresa->descricao, ['controller' => 'AtividadeEmpresas', 'action' => 'view', $empresa->atividade_empresa->id]) : '' ?></p>
+            <h6 class="subheader"><?= __('Empresas Tipo') ?></h6>
+            <p><?= $empresa->has('empresas_tipo') ? $this->Html->link($empresa->empresas_tipo->descricao, ['controller' => 'EmpresasTipos', 'action' => 'view', $empresa->empresas_tipo->id]) : '' ?></p>
+            <h6 class="subheader"><?= __('Empresas Forma Tributacao') ?></h6>
+            <p><?= $empresa->has('empresas_forma_tributacao') ? $this->Html->link($empresa->empresas_forma_tributacao->descricao, ['controller' => 'EmpresasFormaTributacoes', 'action' => 'view', $empresa->empresas_forma_tributacao->id]) : '' ?></p>
             <h6 class="subheader"><?= __('Email') ?></h6>
             <p><?= h($empresa->email) ?></p>
             <h6 class="subheader"><?= __('Nome Empresa') ?></h6>
             <p><?= h($empresa->nome_empresa) ?></p>
+            <h6 class="subheader"><?= __('Forma Trabalho') ?></h6>
+            <p><?= $empresa->has('forma_trabalho') ? $this->Html->link($empresa->forma_trabalho->descricao, ['controller' => 'FormaTrabalhos', 'action' => 'view', $empresa->forma_trabalho->id]) : '' ?></p>
         </div>
         <div class="large-2 columns numbers end">
             <h6 class="subheader"><?= __('Id') ?></h6>
             <p><?= $this->Number->format($empresa->id) ?></p>
-            <h6 class="subheader"><?= __('Tipo Empresa Id') ?></h6>
-            <p><?= $this->Number->format($empresa->tipo_empresa_id) ?></p>
-            <h6 class="subheader"><?= __('Forma Tributacao Empresa Id') ?></h6>
-            <p><?= $this->Number->format($empresa->forma_tributacao_empresa_id) ?></p>
             <h6 class="subheader"><?= __('Cnpj') ?></h6>
             <p><?= $this->Number->format($empresa->cnpj) ?></p>
             <h6 class="subheader"><?= __('Percentual Juros') ?></h6>
@@ -58,7 +42,7 @@
         <tr>
             <th><?= __('Id') ?></th>
             <th><?= __('Empresa Id') ?></th>
-            <th><?= __('Categoria Clientes Id') ?></th>
+            <th><?= __('Clientes Categorias Id') ?></th>
             <th><?= __('Identificacao') ?></th>
             <th><?= __('Nome') ?></th>
             <th><?= __('Email') ?></th>
@@ -72,7 +56,7 @@
         <tr>
             <td><?= h($clientes->id) ?></td>
             <td><?= h($clientes->empresa_id) ?></td>
-            <td><?= h($clientes->categoria_clientes_id) ?></td>
+            <td><?= h($clientes->clientes_categorias_id) ?></td>
             <td><?= h($clientes->identificacao) ?></td>
             <td><?= h($clientes->nome) ?></td>
             <td><?= h($clientes->email) ?></td>
@@ -159,36 +143,6 @@
                 <?= $this->Html->link(__('Edit'), ['controller' => 'Fornecedores', 'action' => 'edit', $fornecedores->id]) ?>
 
                 <?= $this->Form->postLink(__('Delete'), ['controller' => 'Fornecedores', 'action' => 'delete', $fornecedores->id], ['confirm' => __('Are you sure you want to delete # {0}?', $fornecedores->id)]) ?>
-
-            </td>
-        </tr>
-
-        <?php endforeach; ?>
-    </table>
-    <?php endif; ?>
-    </div>
-</div>
-<div class="related row">
-    <div class="column large-12">
-    <h4 class="subheader"><?= __('Related Forma Trabalhos') ?></h4>
-    <?php if (!empty($empresa->forma_trabalhos)): ?>
-    <table cellpadding="0" cellspacing="0">
-        <tr>
-            <th><?= __('Id') ?></th>
-            <th><?= __('Descricao') ?></th>
-            <th class="actions"><?= __('Actions') ?></th>
-        </tr>
-        <?php foreach ($empresa->forma_trabalhos as $formaTrabalhos): ?>
-        <tr>
-            <td><?= h($formaTrabalhos->id) ?></td>
-            <td><?= h($formaTrabalhos->descricao) ?></td>
-
-            <td class="actions">
-                <?= $this->Html->link(__('View'), ['controller' => 'FormaTrabalhos', 'action' => 'view', $formaTrabalhos->id]) ?>
-
-                <?= $this->Html->link(__('Edit'), ['controller' => 'FormaTrabalhos', 'action' => 'edit', $formaTrabalhos->id]) ?>
-
-                <?= $this->Form->postLink(__('Delete'), ['controller' => 'FormaTrabalhos', 'action' => 'delete', $formaTrabalhos->id], ['confirm' => __('Are you sure you want to delete # {0}?', $formaTrabalhos->id)]) ?>
 
             </td>
         </tr>

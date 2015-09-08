@@ -208,7 +208,8 @@
 								<ul class="dropdown-menu">
 									<!-- User image -->
 									<li class="user-header">
-										<img src="img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+										<?= $this->Html->image('user2-160x160.jpg') ?>
+										<!-- <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image" /> -->
 										<p>
 											Alexander Pierce - Web Developer
 											<small>Member since Nov. 2012</small>
