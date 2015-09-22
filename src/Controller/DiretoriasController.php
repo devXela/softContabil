@@ -19,7 +19,7 @@ class DiretoriasController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Empresas']
+            'contain' => []
         ];
         $this->set('diretorias', $this->paginate($this->Diretorias));
         $this->set('_serialize', ['diretorias']);
@@ -35,7 +35,7 @@ class DiretoriasController extends AppController
     public function view($id = null)
     {
         $diretoria = $this->Diretorias->get($id, [
-            'contain' => ['Empresas', 'Gerencias']
+            'contain' => ['Gerencias']
         ]);
         $this->set('diretoria', $diretoria);
         $this->set('_serialize', ['diretoria']);
@@ -58,8 +58,8 @@ class DiretoriasController extends AppController
                 $this->Flash->error(__('The diretoria could not be saved. Please, try again.'));
             }
         }
-        $empresas = $this->Diretorias->Empresas->find('list', ['limit' => 200]);
-        $this->set(compact('diretoria', 'empresas'));
+        // $empresas = $this->Diretorias->Empresas->find('list', ['limit' => 200]);
+        $this->set(compact('diretoria'));
         $this->set('_serialize', ['diretoria']);
     }
 
@@ -84,8 +84,8 @@ class DiretoriasController extends AppController
                 $this->Flash->error(__('The diretoria could not be saved. Please, try again.'));
             }
         }
-        $empresas = $this->Diretorias->Empresas->find('list', ['limit' => 200]);
-        $this->set(compact('diretoria', 'empresas'));
+        // $empresas = $this->Diretorias->Empresas->find('list', ['limit' => 200]);
+        $this->set(compact('diretoria'));
         $this->set('_serialize', ['diretoria']);
     }
 

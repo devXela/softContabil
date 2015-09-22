@@ -25,7 +25,7 @@ class ContaEmpresasTiposTable extends Table
         parent::initialize($config);
 
         $this->table('conta_empresas_tipos');
-        $this->displayField('id');
+        $this->displayField('descricao');
         $this->primaryKey('id');
     }
 

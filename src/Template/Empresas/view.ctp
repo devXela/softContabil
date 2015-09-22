@@ -49,7 +49,7 @@
 <div class="empresas col-sm-12 ">
     <div class="box box-primary">
         <div class="box-header with-border">
-            <h4 class="box-title"><?= __('Related Clientes') ?></h4>
+            <h4 class="box-title"><?= __('Clientes relacionados') ?></h4>
         </div>
         <?php if (!empty($empresa->clientes)): ?>
         <table cellpadding="0" cellspacing="0">
@@ -95,47 +95,10 @@
     </div>
 </div>
 
-
 <div class="empresas col-sm-12 ">
     <div class="box box-primary">
         <div class="box-header with-border">
-            <h4 class="box-title"><?= __('Related Diretorias') ?></h4>
-        </div>
-        <?php if (!empty($empresa->diretorias)): ?>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                    <th><?= __('Id') ?></th>
-                    <th><?= __('Empresa Id') ?></th>
-                    <th><?= __('Diretoria') ?></th>
-                    <th class="actions"><?= __('Actions') ?></th>
-            </tr>
-            <?php foreach ($empresa->diretorias as $diretorias): ?>
-            <tr>
-                <td><?= h($diretorias->id) ?></td>
-                <td><?= h($diretorias->empresa_id) ?></td>
-                <td><?= h($diretorias->diretoria) ?></td>
-
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Diretorias', 'action' => 'view', $diretorias->id]) ?>
-
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Diretorias', 'action' => 'edit', $diretorias->id]) ?>
-
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Diretorias', 'action' => 'delete', $diretorias->id], ['confirm' => __('Are you sure you want to delete # {0}?', $diretorias->id)]) ?>
-
-                </td>
-            </tr>
-
-            <?php endforeach; ?>
-        </table>
-        <?php endif; ?>
-    </div>
-</div>
-
-
-<div class="empresas col-sm-12 ">
-    <div class="box box-primary">
-        <div class="box-header with-border">
-            <h4 class="box-title"><?= __('Related Fornecedores') ?></h4>
+            <h4 class="box-title"><?= __('Fornecedores relacionados') ?></h4>
         </div>
         <?php if (!empty($empresa->fornecedores)): ?>
         <table cellpadding="0" cellspacing="0">

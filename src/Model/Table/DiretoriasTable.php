@@ -29,10 +29,10 @@ class DiretoriasTable extends Table
         $this->table('diretorias');
         $this->displayField('id');
         $this->primaryKey('id');
-        $this->belongsTo('Empresas', [
-            'foreignKey' => 'empresa_id',
-            'joinType' => 'INNER'
-        ]);
+        // $this->belongsTo('Empresas', [
+        //     'foreignKey' => 'empresa_id',
+        //     'joinType' => 'INNER'
+        // ]);
         $this->hasMany('Gerencias', [
             'foreignKey' => 'diretoria_id'
         ]);
@@ -64,9 +64,9 @@ class DiretoriasTable extends Table
      * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
      * @return \Cake\ORM\RulesChecker
      */
-    public function buildRules(RulesChecker $rules)
-    {
-        $rules->add($rules->existsIn(['empresa_id'], 'Empresas'));
-        return $rules;
-    }
+    // public function buildRules(RulesChecker $rules)
+    // {
+    //     $rules->add($rules->existsIn(['empresa_id'], 'Empresas'));
+    //     return $rules;
+    // }
 }

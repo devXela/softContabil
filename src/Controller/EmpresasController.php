@@ -35,7 +35,7 @@ class EmpresasController extends AppController
     public function view($id = null)
     {
         $empresa = $this->Empresas->get($id, [
-            'contain' => ['AtividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes', 'FormaTrabalhos', 'Clientes', 'Diretorias', 'Fornecedores']
+            'contain' => ['AtividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes', 'FormaTrabalhos', 'Clientes', 'Fornecedores']
         ]);
         $this->set('empresa', $empresa);
         $this->set('_serialize', ['empresa']);
@@ -62,9 +62,11 @@ class EmpresasController extends AppController
 
         $EmpresasTipos = $this->Empresas->EmpresasTipos->find('list', ['limit' => 200]);
         // debug($EmpresasTipos);
+        $bancos = $this->Empresas->ContaEmpresas->Bancos->find('list');
         $EmpresasFormaTributacoes = $this->Empresas->EmpresasFormaTributacoes->find('list', ['limit' => 200]);
         $formaTrabalhos = $this->Empresas->FormaTrabalhos->find('list', ['limit' => 200]);
-        $this->set(compact('empresa', 'atividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes', 'formaTrabalhos'));
+        $tipoConta = $this->Empresas->ContaEmpresas->ContaEmpresasTipos->find('list');
+        $this->set(compact('tipoConta','bancos','empresa', 'atividadeEmpresas', 'EmpresasTipos', 'EmpresasFormaTributacoes', 'formaTrabalhos'));
         $this->set('_serialize', ['empresa']);
     }
 

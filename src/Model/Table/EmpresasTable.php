@@ -54,8 +54,9 @@ class EmpresasTable extends Table
         $this->hasMany('Clientes', [
             'foreignKey' => 'empresa_id'
         ]);
-        $this->hasMany('Diretorias', [
-            'foreignKey' => 'empresa_id'
+        $this->hasMany('ContaEmpresas', [
+            'foreignKey' => 'empresa_id',
+            'joinType' => 'INNER'
         ]);
         $this->hasMany('Fornecedores', [
             'foreignKey' => 'empresa_id'

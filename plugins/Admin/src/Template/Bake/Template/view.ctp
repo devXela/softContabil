@@ -135,7 +135,7 @@ foreach ($relations as $alias => $details):
 <div class="<%= $pluralVar %> col-sm-12 ">
     <div class="box box-primary">
         <div class="box-header with-border">
-            <h4 class="box-title"><?= __('Related <%= $otherPluralHumanName %>') ?></h4>
+            <h4 class="box-title"><?= __('<%= $otherPluralHumanName %> relacionados') ?></h4>
         </div>
         <?php if (!empty($<%= $singularVar %>-><%= $details['property'] %>)): ?>
         <table cellpadding="0" cellspacing="0">
